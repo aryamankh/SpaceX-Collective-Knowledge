@@ -26,7 +26,7 @@ serve-backend() {
 build-backend() (
 	cd backend
 	go build \
-		-o ../prestige \
+		-o ../kb \
 		-v \
 		-ldflags "-X main.Version=${VERSION-} -X main.Date=$(date -u +%Y-%m-%dT%H:%M:%SZ)" \
 		.
@@ -44,11 +44,11 @@ test-backend() {
 	docker compose up -d
 
 	# The `%%` here will be replaced by a different db name for each test.
-	export PRESTIGE_DATABASE_URI="mongodb://user:pass@localhost/%%?authSource=admin"
+	export KB_DATABASE_URI="mongodb://user:pass@localhost/%%?authSource=admin"
 
 	n=4
 	while [[ $n -gt 0 ]]; do
-		if docker compose exec mongo mongosh "${PRESTIGE_DATABASE_URI//%%/}" --quiet --eval "$(cat apitests/mongodb-test-data.js)"; then
+		if docker compose exec mongo mongosh "${KB_DATABASE_URI//%%/}" --quiet --eval "$(cat apitests/mongodb-test-data.js)"; then
 			break
 		fi
 		sleep 3
@@ -163,7 +163,7 @@ test-ui() {
 
 	yarn playwright install --with-deps
 
-	cp -v ../prestige .
+	cp -v ../kb .
 
 	docker compose -f ../backend/docker-compose.yaml pull
 	docker compose -f ../backend/docker-compose.yaml up -d

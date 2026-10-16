@@ -4,11 +4,11 @@ import (
 	"bytes"
 	"context"
 	"github.com/google/go-cmp/cmp"
-	"github.com/spacex/prestige/config"
-	"github.com/spacex/prestige/dbclient"
-	"github.com/spacex/prestige/httpclient"
-	"github.com/spacex/prestige/mux"
-	"github.com/spacex/prestige/utils"
+	"github.com/spacex/kb/config"
+	"github.com/spacex/kb/dbclient"
+	"github.com/spacex/kb/httpclient"
+	"github.com/spacex/kb/mux"
+	"github.com/spacex/kb/utils"
 	"io"
 	"log"
 	"net/http"
@@ -90,7 +90,7 @@ func New(t *testing.T) *TastySession {
 		},
 	})
 
-	dbUri := strings.Replace(os.Getenv("PRESTIGE_DATABASE_URI"), "%%", t.Name(), 1)
+	dbUri := strings.Replace(os.Getenv("KB_DATABASE_URI"), "%%", t.Name(), 1)
 	m.UseDBClient(dbclient.New(context.Background(), dbUri))
 
 	t.Cleanup(func() {

@@ -179,13 +179,13 @@ export default class Workspace {
 
 		console.log("Initializing CodeMirror for Workspace.")
 		this.codeMirror = CodeMirror(element, {
-			mode: "prestige",
+			mode: "kb",
 			lineNumbers: true,
 			matchBrackets: {},
 			autofocus: true,
 			autoCloseBrackets: true,
 			styleActiveLine: true,
-			gutters: ["prestige", "CodeMirror-lint-markers"],
+			gutters: ["kb", "CodeMirror-lint-markers"],
 			lint: true,
 			value: this.getContent(),
 			extraKeys: {
@@ -271,7 +271,7 @@ export default class Workspace {
 		}
 
 		console.log("Updating editor display in workspace.", this.lines.length)
-		this.codeMirror.clearGutter("prestige")
+		this.codeMirror.clearGutter("kb")
 
 		const lines: string[] = this.lines
 		const structure2 = parse(lines)
@@ -350,7 +350,7 @@ export default class Workspace {
 					el.dataset.end = block.payload.end.toString()
 					el.dataset.pretty = pretty
 					el.addEventListener("click", this.onPrettifyClicked)
-					this.codeMirror.setGutterMarker(block.payload.start, "prestige", el)
+					this.codeMirror.setGutterMarker(block.payload.start, "kb", el)
 				}
 
 			}

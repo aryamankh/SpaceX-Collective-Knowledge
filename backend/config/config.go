@@ -38,7 +38,7 @@ func loadBindTarget() string {
 
 func loadAllowedHosts() map[string]any {
 	allowedHosts := map[string]any{}
-	for _, host := range strings.Split(os.Getenv("PRESTIGE_ALLOWED_HOSTS"), ",") {
+	for _, host := range strings.Split(os.Getenv("KB_ALLOWED_HOSTS"), ",") {
 		host = strings.TrimSpace(host)
 		if host != "" {
 			allowedHosts[host] = nil
@@ -54,20 +54,20 @@ func loadAllowedHosts() map[string]any {
 }
 
 func loadEncryptionKey() []byte {
-	encryptionKey, err := base64.StdEncoding.DecodeString(strings.TrimSpace(os.Getenv("PRESTIGE_SECRET_KEY")))
+	encryptionKey, err := base64.StdEncoding.DecodeString(strings.TrimSpace(os.Getenv("KB_SECRET_KEY")))
 	if err != nil {
-		log.Fatalf("Error decoding PRESTIGE_SECRET_KEY: %v", err)
+		log.Fatalf("Error decoding KB_SECRET_KEY: %v", err)
 	}
 
 	if len(encryptionKey) != 32 {
-		log.Fatalf("PRESTIGE_SECRET_KEY should be exactly 32 bytes in length, but is %d bytes.", len(encryptionKey))
+		log.Fatalf("KB_SECRET_KEY should be exactly 32 bytes in length, but is %d bytes.", len(encryptionKey))
 	}
 
 	return encryptionKey
 }
 
 func loadProxyDisallowedHosts() (map[string]any, []netip.Prefix) {
-	disallowedConfig := os.Getenv("PRESTIGE_PROXY_DISALLOWED_HOSTS")
+	disallowedConfig := os.Getenv("KB_PROXY_DISALLOWED_HOSTS")
 	if disallowedConfig == "" {
 		// Private Network IP ranges <https://en.wikipedia.org/wiki/Private_network>.
 		disallowedConfig = "10.0.0.0/8, 172.16.0.0/12, 192.168.0.0/16, fd00::/8"

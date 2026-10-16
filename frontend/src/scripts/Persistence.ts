@@ -371,7 +371,7 @@ export class GistProvider extends Provider<GistSource> {
 		this.verifyUser()
 
 		const gistName = sheet.path.split("/")[1]
-		const fileName = sheet.path.split("/")[2] ?? "main.prestige"
+		const fileName = sheet.path.split("/")[2] ?? "main.kb"
 		const gist = this.gists[gistName]
 
 		await m.request({
@@ -489,7 +489,7 @@ export class GistProvider extends Provider<GistSource> {
 
 		return [
 			gists.length === 0 && m("p.pa1", [
-				"No prestige gists found! Let's ",
+				"No kb gists found! Let's ",
 				m("a", { onclick: () => this.create(), href: "#" }, "create one now"),
 				"!",
 			]),

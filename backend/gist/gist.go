@@ -4,11 +4,11 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	"github.com/spacex/prestige/assets"
-	"github.com/spacex/prestige/dbclient"
-	"github.com/spacex/prestige/exchange"
-	"github.com/spacex/prestige/httpclient"
-	"github.com/spacex/prestige/utils"
+	"github.com/spacex/kb/assets"
+	"github.com/spacex/kb/dbclient"
+	"github.com/spacex/kb/exchange"
+	"github.com/spacex/kb/httpclient"
+	"github.com/spacex/kb/utils"
 	"log"
 	"net/http"
 	"strings"
@@ -27,7 +27,7 @@ type FileItem struct {
 	Name string `json:"name"`
 }
 
-var InitialGistContent = assets.GetAssetString("initial.prestige")
+var InitialGistContent = assets.GetAssetString("initial.kb")
 
 const GetListQuery = `{
   viewer {
@@ -168,13 +168,13 @@ func HandleList(_ context.Context, ex *exchange.Exchange, accessToken string) {
 				firstMarkdownFile = file.Name
 				continue
 			}
-			if strings.HasSuffix(file.Name, ".prestige") {
+			if strings.HasSuffix(file.Name, ".kb") {
 				files = append(files, FileItem{Name: file.Name})
 			}
 		}
 
 		if len(files) == 0 {
-			// No *.prestige files found, so skip this gist.
+			// No *.kb files found, so skip this gist.
 			continue
 		}
 
@@ -235,7 +235,7 @@ func HandleCreate(_ context.Context, ex *exchange.Exchange, user *dbclient.User,
 				readmeName: map[string]any{
 					"content": "# " + createGistDTO.Title,
 				},
-				"main.prestige": map[string]any{
+				"main.kb": map[string]any{
 					"content": createGistDTO.Content,
 				},
 			},
@@ -280,7 +280,7 @@ func HandleCreate(_ context.Context, ex *exchange.Exchange, user *dbclient.User,
 				readmeName: map[string]any{
 					"content": "# " + readmeContent,
 				},
-				"main.prestige": map[string]any{
+				"main.kb": map[string]any{
 					"content": createGistDTO.Content,
 				},
 			},
@@ -319,7 +319,7 @@ func HandleGistFile(ctx context.Context, ex *exchange.Exchange) {
 	}
 
 	if fileName == "" {
-		fileName = "main.prestige"
+		fileName = "main.kb"
 	}
 
 	// TODO: Figure out a way to not download the whole gist file into memory before we start writing to the client, with `io.Pipe` may be?

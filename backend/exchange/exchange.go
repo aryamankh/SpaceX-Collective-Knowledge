@@ -5,10 +5,10 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/spacex/prestige/config"
-	"github.com/spacex/prestige/dbclient"
-	"github.com/spacex/prestige/httpclient"
-	"github.com/spacex/prestige/utils"
+	"github.com/spacex/kb/config"
+	"github.com/spacex/kb/dbclient"
+	"github.com/spacex/kb/httpclient"
+	"github.com/spacex/kb/utils"
 	"log"
 	"net/http"
 	"time"
@@ -87,7 +87,7 @@ func (ex Exchange) HTTPDo(request httpclient.Request) (*httpclient.Response, err
 }
 
 func (ex *Exchange) InitSession(ctx context.Context) *dbclient.SessionDTO {
-	cookie, err := ex.Request.Cookie("prestige_sid")
+	cookie, err := ex.Request.Cookie("kb_sid")
 	sid := ""
 
 	if err == nil && cookie.Value != "" {
@@ -96,7 +96,7 @@ func (ex *Exchange) InitSession(ctx context.Context) *dbclient.SessionDTO {
 	}
 
 	if err != nil && err != http.ErrNoCookie {
-		log.Printf("Error getting prestige_sid cookie: %v", err)
+		log.Printf("Error getting kb_sid cookie: %v", err)
 	}
 
 	if ex.Session == nil || ex.Session.Sid == "" {
@@ -116,7 +116,7 @@ func (ex *Exchange) InitSession(ctx context.Context) *dbclient.SessionDTO {
 		}
 
 		cookie = &http.Cookie{
-			Name:  "prestige_sid",
+			Name:  "kb_sid",
 			Value: sid,
 		}
 	}

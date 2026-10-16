@@ -1,6 +1,6 @@
 const { createProxyMiddleware } = require("http-proxy-middleware")
 
-const bindAddress = process.env.PRESTIGE_BIND || "localhost:3041"
+const bindAddress = process.env.KB_BIND || "localhost:3041"
 const backendTarget = bindAddress.startsWith("unix/")
 	? { socketPath: bindAddress.substring("unix/".length) }
 	: `http://${bindAddress}`

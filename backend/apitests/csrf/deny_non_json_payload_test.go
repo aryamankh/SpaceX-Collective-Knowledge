@@ -4,9 +4,9 @@ package csrf
 
 import (
 	"bytes"
-	"github.com/sharat87/prestige/apitests/tastysession"
-	"github.com/sharat87/prestige/httpclient"
-	"github.com/sharat87/prestige/utils"
+	"github.com/spacex/prestige/apitests/tastysession"
+	"github.com/spacex/prestige/httpclient"
+	"github.com/spacex/prestige/utils"
 	"io"
 	"net/http"
 	"net/http/httptest"

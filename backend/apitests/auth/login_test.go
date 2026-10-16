@@ -1,8 +1,8 @@
 package auth_test
 
 import (
-	"github.com/sharat87/prestige/apitests/tastysession"
-	"github.com/sharat87/prestige/httpclient"
+	"github.com/spacex/prestige/apitests/tastysession"
+	"github.com/spacex/prestige/httpclient"
 	"net/http"
 	"testing"
 )

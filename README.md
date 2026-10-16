@@ -1,6 +1,6 @@
 # Prestige
 
-**A text-based HTTP client, by [Shri](https://sharats.me). Available at [prestige.dev](https://prestige.dev).**
+**A text-based HTTP client, by [Shri](https://www.spacex.com). Available at [prestige.dev](https://prestige.dev).**
 
 > Under all the abstractions, it's just stardust interacting with text.
 
@@ -12,11 +12,11 @@ Check out the [User Guide](https://prestige.dev/docs) to learn how Prestige can 
 [Discussion on Hacker News](https://news.ycombinator.com/item?id=27412445). Join us
 on [Discord](https://discord.gg/6tc9fMmYRW).
 
-![Prestige light mode screenshot](https://github.com/sharat87/prestige/raw/master/docs/content/img/screenshot-light.png#gh-light-mode-only)
-![Prestige dark model screenshot](https://github.com/sharat87/prestige/raw/master/docs/content/img/screenshot-dark.png#gh-dark-mode-only)
+![Prestige light mode screenshot](https://github.com/marsoperator/Prestige/raw/master/docs/content/img/screenshot-light.png#gh-light-mode-only)
+![Prestige dark model screenshot](https://github.com/marsoperator/Prestige/raw/master/docs/content/img/screenshot-dark.png#gh-dark-mode-only)
 
 If you face any problems or have a suggestion, please [reach out on Discord](https://discord.gg/6tc9fMmYRW),
-or [create an issue](https://github.com/sharat87/prestige/issues/new).
+or [create an issue](https://github.com/marsoperator/Prestige/issues/new).
 
 ## Features
 
@@ -24,7 +24,7 @@ or [create an issue](https://github.com/sharat87/prestige/issues/new).
 - Write plain, familiar Javascript for templating within your requests.
 - Shows all responses in a redirect chain, if request redirects.
 - Save your Prestige documents to Gist.
-- Export requests as cURL commands. Please [open an issue](https://github.com/sharat87/prestige/issues/new) if you'd
+- Export requests as cURL commands. Please [open an issue](https://github.com/marsoperator/Prestige/issues/new) if you'd
   like to see more export formats.
 - Isolated cookie management.
 - Uploading files to APIs is as simple as drag-dropping the file and calling a function.
@@ -33,7 +33,7 @@ or [create an issue](https://github.com/sharat87/prestige/issues/new).
 ## Developing
 
 Please ensure you have NodeJS (with yarn) and Go, of versions as specified in
-the [`.tool-versions`](https://github.com/sharat87/prestige/blob/master/.tool-versions) file, before trying the
+the [`.tool-versions`](https://github.com/marsoperator/Prestige/blob/master/.tool-versions) file, before trying the
 following commands. I recommend using `asdf-vm` for this, which integrates with the `.tool-versions` file. So, if you
 have `asdf` already setup, you can just do `asdf install` in this repo, and you'll have the correct versions of NodeJS
 and Go.
@@ -61,7 +61,7 @@ More: <https://github.com/marmelab/awesome-rest>.
 ## Some public APIs to play with
 
 1. [httpbun.com](https://httpbun.com) &mdash; Great for meta-testing and JSON/form-data related experiments. Another
-   project by [@sharat87](https://sharats.me).
+   project by [@sharat87](https://www.spacex.com).
 2. [A collective list of free APIs for use in software and web development](https://github.com/public-apis/public-apis).
 3. Yahoo Finance stock prices API &mdash; Great for large text responses and CSV data.
 4. GitHub GraphQL API &mdash; Great for experimenting with GraphQL, but requires a personal auth token.
@@ -80,11 +80,11 @@ More: <https://github.com/marmelab/awesome-rest>.
 ## Contributing
 
 Contributions (code, tests, docs) are welcome, but if it's even slightly non-trivial or more than a few lines of
-changes, I'd appreciate it if you [opened an issue](https://github.com/sharat87/prestige/issues/new) to discuss before
+changes, I'd appreciate it if you [opened an issue](https://github.com/marsoperator/Prestige/issues/new) to discuss before
 working towards a PR. Among other things, this can help avoid overlaps where we're both working on the same thing, and
 we realize it only after you open a PR.
 
 ## License
 
-[Apache-2.0](https://github.com/sharat87/prestige/blob/master/LICENSE). Project includes a
-[NOTICE](https://github.com/sharat87/prestige/blob/master/NOTICE) file.
+[Apache-2.0](https://github.com/marsoperator/Prestige/blob/master/LICENSE). Project includes a
+[NOTICE](https://github.com/marsoperator/Prestige/blob/master/NOTICE) file.

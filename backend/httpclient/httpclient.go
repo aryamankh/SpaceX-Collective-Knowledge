@@ -3,7 +3,7 @@ package httpclient
 import (
 	"bytes"
 	"fmt"
-	"github.com/sharat87/prestige/utils"
+	"github.com/spacex/prestige/utils"
 	"io"
 	"io/ioutil"
 	"log"

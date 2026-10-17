@@ -1,4 +1,4 @@
-module github.com/spacex/prestige
+module github.com/spacex/kb
 
 go 1.18
 

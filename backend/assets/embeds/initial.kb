@@ -1,52 +1,50 @@
-# Welcome to Prestige! Your newest developer tool!
-# Just enter the HTTP requests you want to make and hit Ctrl+Enter (or Cmd+Enter) to execute.
-# Like this one right here:
-
-GET https://httpbun.com/get?name=haha
-
-###
-
-# Lines starting with a single '#' like this are comments.
-# Learn more about the syntax at ${window.location.origin}/docs/guides/syntax/.
-# Let's make a POST request!
-
-POST https://httpbun.com/post
-Content-Type: application/x-www-form-urlencoded
-
-username=sherlock&password=elementary
+# Welcome to the SpaceX Collective Knowledge Base.
+#
+# Every team writes here: what broke, what we learned, what we changed, and
+# what we would do differently next time. Grokbot ingests this repo, so write
+# for a reader who has never seen your subsystem.
+#
+# Notes start with front-matter, then the story, then the evidence.
 
 ###
 
-# Custom headers, easy as popcorn.
-# Learn more at ${window.location.origin}/docs/guides/syntax/#header-section.
+# ---
+# id: raptor-tvc-oscillation-2026-04
+# domain: propulsion
+# system: raptor-3
+# author: r.castellanos
+# reviewed_by: e.musk
+# status: reviewed
+# severity: high
+# tags: [tvc, oscillation, damping]
+#
+# ## What happened
+#
+# ## What we changed
+#
+# ## What we would do differently
+# ---
 
-GET https://httpbun.com/headers
-X-Custom1: custom header value one
-X-Custom2: custom header value two
+###
+
+# Requests still run, so a note can carry its own evidence — the probe, the
+# query, the endpoint that reproduces it. Ctrl+Enter (or Cmd+Enter) executes.
+# Syntax: ${window.location.origin}/docs/guides/syntax/.
+
+GET https://kb.spacex.com/health
+
+###
+
+# A Javascript block can template a request before it runs.
+# More at ${window.location.origin}/docs/guides/javascript-blocks/.
 
 ### javascript
 
-// This is a Javascript block, so comments start with '//'.
-// The following will be available for templating in requests *after* this Javascript block.
-// Learn more at ${window.location.origin}/docs/guides/javascript-blocks/.
-this.data.postUrl = "post"
+this.data.team = "propulsion"
 
 ###
 
-# Let's use templates to make the same POST request as before!
-# Learn more at: ${window.location.origin}/docs/guides/templating/.
-POST https://httpbun.com/${postUrl}
-Content-Type: application/x-www-form-urlencoded
+POST https://kb.spacex.com/api/notes
+Content-Type: application/json
 
-username=sherlock&password=elementary
-
-###
-
-# We can define a Javascript function to be called when this request finishes execution.
-POST https://httpbun.com/post
-
-one=1&two=2
-
-@onFinish(response) {
-	alert("Request finished!")
-}
+{"id":"raptor-tvc-oscillation-2026-04","domain":"propulsion","owner":"${team}"}

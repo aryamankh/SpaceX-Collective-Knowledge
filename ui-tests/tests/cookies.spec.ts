@@ -1,9 +1,9 @@
 import { expect, test } from "@playwright/test"
 import { editorRun, setEditorText } from "./utils"
 
-test("Load Prestige", async ({ page }) => {
+test("Load the knowledge base", async ({ page }) => {
 	await page.goto("/")
-	await expect(page).toHaveTitle(/Prestige/)
+	await expect(page).toHaveTitle(/Collective Knowledge Base/)
 })
 
 test("Cookies UI reflect responses", async ({ page }) => {

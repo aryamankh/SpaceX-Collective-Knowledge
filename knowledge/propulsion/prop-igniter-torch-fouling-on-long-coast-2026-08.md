@@ -1,0 +1,37 @@
+---
+id: prop-igniter-torch-fouling-on-long-coast-2026-08
+domain: propulsion
+system: raptor-3
+author: jakewmeyer
+reviewed_by: shahar603
+status: reviewed
+severity: medium
+created: 2026-08-18
+tags: [actuator, pad, propulsion]
+---
+
+# Igniter torch fouling on long coast
+
+## Context
+
+A wet dress rehearsal on raptor-3, while the TVC actuator was under watch by the console. The run was configured to the current published limits.
+
+## What happened
+
+Frame timing on the TVC actuator moved outside the expected band within 17 s. The run was run to completion with a note. No hardware was lost beyond the item already suspect.
+
+## Root cause
+
+The tvc actuator had accumulated wear that the periodic inspection did not resolve at the resolution needed. Teardown found the condition; the the NCR records it with photos.
+
+## What we changed
+
+The torque spec was revised and a torque re-verification was added to the task list before the next run. Owner: jakewmeyer.
+
+## What we would do differently
+
+Stop on the first excursion of the TVC actuator instead of waiting for a second confirmation. Two data points cost more than the abort.
+
+## Evidence
+
+The inspection photo set, telemetry export and teardown photos filed against this note. Related notes are linked from the domain index.

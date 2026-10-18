@@ -1,90 +1,127 @@
-# Prestige
+<p align="center"><img src="https://live.staticflickr.com/65535/49185149122_37f5c52e43_k.jpg" alt="Starship on the pad"></p>
 
-**A text-based HTTP client, by [Shri](https://www.spacex.com). Available at [prestige.dev](https://prestige.dev).**
+<h1 align="center">SpaceX Collective Knowledge Base</h1>
 
-> Under all the abstractions, it's just stardust interacting with text.
+<h3 align="center">
+One repository, every team, everything we had to learn the hard way.
+</h3>
 
-This is a *powerful*, *text-based*, *in-browser*, HTTP client app geared towards web developers and API testing
-professionals.
+<p align="center">
+<a href="https://github.com/marsoperator/SpaceX-Collective-Knowledge-Base2/actions/workflows/knowledge.yml"><img src="https://img.shields.io/github/actions/workflow/status/marsoperator/SpaceX-Collective-Knowledge-Base2/knowledge.yml?style=flat-square&label=corpus"></a>
+<a href="https://github.com/marsoperator/SpaceX-Collective-Knowledge-Base2/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-blue.svg?style=flat-square"></a>
+<a href="https://go.dev"><img src="https://img.shields.io/badge/go-1.18+-00ADD8.svg?style=flat-square&logo=go&logoColor=white"></a>
+<a href="knowledge/SCHEMA.md"><img src="https://img.shields.io/badge/notes-132-blueviolet.svg?style=flat-square"></a>
+</p>
 
-Check out the [User Guide](https://prestige.dev/docs) to learn how Prestige can be a powerful addition to your toolset.
+<h4 align="center">
+  <i>
+    The company-wide engineering corpus. Personal notes, failure write-ups, process tips, design gotchas and ops tricks — written by the person who lived it, reviewed by the owning team, ingested by Grokbot.
+  </i>
+</h4>
 
-[Discussion on Hacker News](https://news.ycombinator.com/item?id=27412445). Join us
-on [Discord](https://discord.gg/6tc9fMmYRW).
+<h3 align="center">
+<a href="knowledge/SCHEMA.md">Schema</a> - <a href="knowledge/index.json">Corpus Index</a> - <a href=".github/CODEOWNERS">Owners</a> - <a href="CONTRIBUTING.md">Contributing</a>
+<br/>
+</h3>
 
-![Prestige light mode screenshot](https://github.com/marsoperator/Prestige/raw/master/docs/content/img/screenshot-light.png#gh-light-mode-only)
-![Prestige dark model screenshot](https://github.com/marsoperator/Prestige/raw/master/docs/content/img/screenshot-dark.png#gh-dark-mode-only)
+## Overview
 
-If you face any problems or have a suggestion, please [reach out on Discord](https://discord.gg/6tc9fMmYRW),
-or [create an issue](https://github.com/marsoperator/Prestige/issues/new).
+The expensive lessons were already being learned. They just were not being kept. A note that lives in a chat thread is gone in a week; a note that lives here is read by the next engineer, by the reviewer, and by Grokbot when someone asks a question at 02:00 before a tanking operation.
 
-## Features
+The rule is simple: if you had to figure it out, write it down.
 
-- Define requests in plain text, hit `Ctrl+Enter` (or `Cmd+Enter`) to execute and view results.
-- Write plain, familiar Javascript for templating within your requests.
-- Shows all responses in a redirect chain, if request redirects.
-- Save your Prestige documents to Gist.
-- Export requests as cURL commands. Please [open an issue](https://github.com/marsoperator/Prestige/issues/new) if you'd
-  like to see more export formats.
-- Isolated cookie management.
-- Uploading files to APIs is as simple as drag-dropping the file and calling a function.
-- Light and dark modes, for multiple themes.
+## What belongs here
 
-## Developing
+| ✅ Belongs | ❌ Does not |
+|---|---|
+| Failure write-ups with a root cause and an owner | Drawings (link the document id) |
+| Design gotchas that cost you a day | Meeting minutes |
+| Ops tricks that are not in any runbook | Org charts |
+| Inspection and acceptance findings worth generalizing | Anything that belongs in a ticket |
+| Process notes: what the checklist should have said | Vendor marketing |
+| Corrections to a note that turned out to be wrong | Duplicates of the same lesson |
 
-Please ensure you have NodeJS (with yarn) and Go, of versions as specified in
-the [`.tool-versions`](https://github.com/marsoperator/Prestige/blob/master/.tool-versions) file, before trying the
-following commands. I recommend using `asdf-vm` for this, which integrates with the `.tool-versions` file. So, if you
-have `asdf` already setup, you can just do `asdf install` in this repo, and you'll have the correct versions of NodeJS
-and Go.
+## Structure
 
-The project contains a `manage.sh` script that makes development a little easier.
+~~~
+knowledge/
+├── propulsion/           engines, turbomachinery, ignition, TVC
+├── structures/           tanks, barrels, frames, joints, COPVs
+├── avionics/             harness, computers, buses, sensors, power
+├── gnc/                  guidance, navigation, control, aero surfaces
+├── thermal-protection/   tiles, seals, blankets, purge, closeout
+├── ground-systems/       pad, GSE, tanking, quick disconnects
+├── manufacturing/        tooling, welding, fit-up, traceability
+├── materials/            alloys, seals, coatings, lots, certs
+├── flight-software/      sequencers, timing, faults, config
+├── flight-ops/           countdown, range, recovery, triage
+├── safety/               hazard analysis, LOTO, exclusion zones
+├── SCHEMA.md             format contract
+└── index.json            generated, never hand-edited
+~~~
 
-1. `./manage.sh serve-frontend` &mdash; Start frontend Parcel server. This supports full auto-reload.
-2. `./manage.sh serve-backend` &mdash; Start backend server. This _doesn't_ auto-reload when code changes.
-3. `./manage.sh serve-docs` &mdash; Start docs server. This supports auto-reload only for content pages.
-4. `./manage.sh test-*` &mdash; Test frontend/backend/ui (depending on what's in place of `*`).
-5. `./manage.sh build-*` &mdash; Build frontend/backend/docs (depending on what's in place of `*`).
+## Anatomy of a note
 
-Run the serve commands in parallel, then open <http://localhost:3040>.
+Front-matter, then the story, then the evidence. Every field is machine-checked.
 
-## Inspirations
+~~~yaml
+---
+id: prop-raptor-tvc-oscillation-2026-04
+domain: propulsion
+system: raptor-3
+author: jakewmeyer
+reviewed_by: CAM-Gerlach
+status: reviewed
+severity: high
+created: 2026-04-18
+tags: [tvc, oscillation, damping]
+---
+~~~
 
-- HTTP Client for Sublime Text: [Requester](https://github.com/kylebebak/Requester).
-- HTTP Client for VS Code: [vscode-restclient](https://github.com/Huachao/vscode-restclient).
-- REST Client for IntelliJ based
-  IDEs: [JetBrains HTTP Client](https://www.jetbrains.com/help/idea/http-client-in-product-code-editor.html).
-- My own Vim extension towards a very similar concept: [roast.vim](https://github.com/sharat87/roast.vim).
+Then `## Context`, `## What happened`, `## Root cause`, `## What we changed`, `## What we would do differently`, `## Evidence`. Numbers over adjectives: frequencies, pressures, torques, durations.
 
-More: <https://github.com/marmelab/awesome-rest>.
+## Workflow
 
-## Some public APIs to play with
+~~~mermaid
+flowchart LR
+    A[draft note] --> B[owning team review]
+    B --> C[independent reviewer]
+    C --> D[reviewed on main]
+    D --> E[Grokbot corpus]
+~~~
 
-1. [httpbun.com](https://httpbun.com) &mdash; Great for meta-testing and JSON/form-data related experiments. Another
-   project by [@sharat87](https://www.spacex.com).
-2. [A collective list of free APIs for use in software and web development](https://github.com/public-apis/public-apis).
-3. Yahoo Finance stock prices API &mdash; Great for large text responses and CSV data.
-4. GitHub GraphQL API &mdash; Great for experimenting with GraphQL, but requires a personal auth token.
-5. [A Curated List of 100 Cool and Fun Public APIs to Inspire Your Next Project](https://medium.com/better-programming/a-curated-list-of-100-cool-and-fun-public-apis-to-inspire-your-next-project-7600ce3e9b3)
-6. [Postman's collection](https://www.postman.com/cs-demo/workspace/public-rest-apis/collection/8854915-454a2dc7-dcbe-41cf-9bfa-da544fcd93a2)
+`CODEOWNERS` routes every domain to its owning team. A note lands as `draft`, gets reviewed by someone from another team, and merges as `reviewed`. The reviewer stays in the front-matter — if the note is wrong later, we know who to ask. Leadership signs off on the ones that change how we build.
 
-## Rough Roadmap
+## Ingestion
 
-- Close gaps in documentation, finish API Reference and link all mentions of API functions to this page.
-- A desktop app with NeutralinoJS or some other such technology.
-- A browser extension that, when installed, would make it so that we don't need the proxy anymore.
-- A Dockerfile for quickly running a self-hosted instance of Prestige with Docker.
-- Ability to open/edit documents from GitHub repos, Google Drive and Dropbox.
-- Rich editor features like auto-complete, JSON editing help, hotkeys to start new GET/POST/etc. request, snippets etc.
+~~~bash
+./manage.sh ingest-kb
+~~~
 
-## Contributing
+Validates every note, then writes `dist/corpus.jsonl` — one record per note, stable field order, content hash — and regenerates `knowledge/index.json`. CI fails on any schema violation, so `main` is always ingestible and Grokbot never reads a broken corpus.
 
-Contributions (code, tests, docs) are welcome, but if it's even slightly non-trivial or more than a few lines of
-changes, I'd appreciate it if you [opened an issue](https://github.com/marsoperator/Prestige/issues/new) to discuss before
-working towards a PR. Among other things, this can help avoid overlaps where we're both working on the same thing, and
-we realize it only after you open a PR.
+## Running locally
+
+~~~bash
+./manage.sh serve-backend     # API on :3041
+./manage.sh serve-frontend    # UI on :3040
+./manage.sh build-all         # full build, docs included
+~~~
+
+Requires Go 1.18+, Node 16+, and Hugo for the docs build.
+
+## Provenance
+
+The application shell — HTTP session handling, storage abstraction, Gist integration, routing and the cookie UI — is derived from [Prestige](https://github.com/sharat87/prestige) by Shrikant Sharat Kandula, Apache-2.0. The corpus, its schema, the ingestion pipeline, the domain layout and the knowledge-base framing are ours. Attribution is kept in [NOTICE](NOTICE).
+
+## Ownership
+
+Domain owners are in `CODEOWNERS`. The corpus is maintained by everyone who writes into it; the format is maintained by the ingestion owners. If a note is wrong, fix it in place and say what changed — do not open a ticket about it.
 
 ## License
 
-[Apache-2.0](https://github.com/marsoperator/Prestige/blob/master/LICENSE). Project includes a
-[NOTICE](https://github.com/marsoperator/Prestige/blob/master/NOTICE) file.
+Apache-2.0. Notes are internal by default; no controlled drawings inline.
+
+<p align="center">
+  <i>An independent project, not affiliated with or endorsed by Space Exploration Technologies Corp.</i>
+</p>

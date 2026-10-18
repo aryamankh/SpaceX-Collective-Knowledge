@@ -1,6 +1,11 @@
 SpaceX Collective Knowledge Base
 
-Copyright 2020 SpaceX
+This product includes software derived from Prestige,
+Copyright 2020 Shrikant Sharat Kandula, licensed under the Apache License 2.0.
+Upstream: https://github.com/sharat87/prestige
+
+The corpus, its schema, the ingestion pipeline and the domain layout are
+original to this repository.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

@@ -2,8 +2,8 @@
 id: gse-ground-purge-dew-point-excursion-2024-08
 domain: ground-systems
 system: ols-tower-2
-author: kknox
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2024-08-10

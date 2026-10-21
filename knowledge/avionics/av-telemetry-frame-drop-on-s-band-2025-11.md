@@ -2,8 +2,8 @@
 id: av-telemetry-frame-drop-on-s-band-2025-11
 domain: avionics
 system: flight-computer-b2
-author: collierrgbsitisfise
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-11-01

@@ -2,8 +2,8 @@
 id: gnc-grid-fin-authority-at-high-dynamic-pressure-2026-07
 domain: gnc
 system: booster-b19
-author: richiksc
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2026-07-21

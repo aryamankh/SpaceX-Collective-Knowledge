@@ -2,8 +2,8 @@
 id: prop-gimbal-bearing-fretting-after-static-fire-2026-07
 domain: propulsion
 system: raptor-3
-author: jakewmeyer
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2026-07-28

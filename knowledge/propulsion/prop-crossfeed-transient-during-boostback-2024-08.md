@@ -2,8 +2,8 @@
 id: prop-crossfeed-transient-during-boostback-2024-08
 domain: propulsion
 system: raptor-3
-author: jakewmeyer
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2024-08-22

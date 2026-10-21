@@ -2,8 +2,8 @@
 id: av-can-bus-termination-fault-2026-10
 domain: avionics
 system: flight-computer-b2
-author: collierrgbsitisfise
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2026-10-08

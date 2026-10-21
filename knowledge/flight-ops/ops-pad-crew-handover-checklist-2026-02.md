@@ -2,8 +2,8 @@
 id: ops-pad-crew-handover-checklist-2026-02
 domain: flight-ops
 system: launch-complex-39a
-author: CAM-Gerlach
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2026-02-10

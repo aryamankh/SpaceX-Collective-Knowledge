@@ -2,8 +2,8 @@
 id: saf-lockout-tagout-on-gse-2024-09
 domain: safety
 system: pad-operations
-author: shahar603
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2024-09-28

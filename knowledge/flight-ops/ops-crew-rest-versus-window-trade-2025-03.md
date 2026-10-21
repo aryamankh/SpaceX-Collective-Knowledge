@@ -2,8 +2,8 @@
 id: ops-crew-rest-versus-window-trade-2025-03
 domain: flight-ops
 system: launch-complex-39a
-author: CAM-Gerlach
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-03-08

@@ -2,8 +2,8 @@
 id: sw-fault-masking-on-second-fault-2025-02
 domain: flight-software
 system: flight-software-v7
-author: aryamankha
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-02-08

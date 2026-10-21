@@ -2,8 +2,8 @@
 id: mfg-station-takt-time-creep-2024-10
 domain: manufacturing
 system: high-bay-3
-author: AstralZebulon
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2024-10-22

@@ -2,8 +2,8 @@
 id: prop-engine-controller-reset-under-emi-2026-04
 domain: propulsion
 system: raptor-3
-author: jakewmeyer
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2026-04-07

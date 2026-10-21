@@ -2,8 +2,8 @@
 id: av-imu-thermal-drift-after-pad-soak-2026-07
 domain: avionics
 system: flight-computer-b2
-author: collierrgbsitisfise
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2026-07-04

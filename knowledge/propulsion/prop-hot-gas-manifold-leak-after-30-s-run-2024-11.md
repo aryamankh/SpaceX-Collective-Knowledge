@@ -2,8 +2,8 @@
 id: prop-hot-gas-manifold-leak-after-30-s-run-2024-11
 domain: propulsion
 system: raptor-3
-author: jakewmeyer
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2024-11-07

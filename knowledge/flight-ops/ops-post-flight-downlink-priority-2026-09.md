@@ -2,8 +2,8 @@
 id: ops-post-flight-downlink-priority-2026-09
 domain: flight-ops
 system: launch-complex-39a
-author: CAM-Gerlach
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2026-09-19

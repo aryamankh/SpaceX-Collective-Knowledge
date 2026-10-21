@@ -2,8 +2,8 @@
 id: tps-tile-gap-filler-erosion-after-reentry-2025-03
 domain: thermal-protection
 system: starship-heat-shield
-author: emmedve1
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2025-03-11

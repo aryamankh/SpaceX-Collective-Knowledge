@@ -2,8 +2,8 @@
 id: gnc-flap-scheduling-overshoot-on-entry-2025-05
 domain: gnc
 system: booster-b19
-author: richiksc
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2025-05-19

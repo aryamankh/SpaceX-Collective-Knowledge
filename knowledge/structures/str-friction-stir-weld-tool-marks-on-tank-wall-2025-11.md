@@ -2,8 +2,8 @@
 id: str-friction-stir-weld-tool-marks-on-tank-wall-2025-11
 domain: structures
 system: starship-s38
-author: mattythorne
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2025-11-24

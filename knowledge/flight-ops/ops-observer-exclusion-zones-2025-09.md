@@ -2,8 +2,8 @@
 id: ops-observer-exclusion-zones-2025-09
 domain: flight-ops
 system: launch-complex-39a
-author: CAM-Gerlach
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-09-07

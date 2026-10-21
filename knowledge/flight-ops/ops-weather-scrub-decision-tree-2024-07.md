@@ -2,8 +2,8 @@
 id: ops-weather-scrub-decision-tree-2024-07
 domain: flight-ops
 system: launch-complex-39a
-author: CAM-Gerlach
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2024-07-27

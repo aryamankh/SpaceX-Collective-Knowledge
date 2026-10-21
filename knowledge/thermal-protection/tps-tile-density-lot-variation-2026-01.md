@@ -2,8 +2,8 @@
 id: tps-tile-density-lot-variation-2026-01
 domain: thermal-protection
 system: starship-heat-shield
-author: emmedve1
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2026-01-07

@@ -2,8 +2,8 @@
 id: mfg-rework-traceability-gap-2024-08
 domain: manufacturing
 system: high-bay-3
-author: AstralZebulon
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2024-08-06

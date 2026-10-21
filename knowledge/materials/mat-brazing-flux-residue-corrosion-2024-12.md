@@ -2,8 +2,8 @@
 id: mat-brazing-flux-residue-corrosion-2024-12
 domain: materials
 system: inconel-718
-author: AlbericTrancart
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2024-12-01

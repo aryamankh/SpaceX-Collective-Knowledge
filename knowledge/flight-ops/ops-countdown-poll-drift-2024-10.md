@@ -2,8 +2,8 @@
 id: ops-countdown-poll-drift-2024-10
 domain: flight-ops
 system: launch-complex-39a
-author: CAM-Gerlach
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2024-10-12

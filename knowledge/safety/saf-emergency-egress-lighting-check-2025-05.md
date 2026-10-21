@@ -2,8 +2,8 @@
 id: saf-emergency-egress-lighting-check-2025-05
 domain: safety
 system: pad-operations
-author: shahar603
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2025-05-11

@@ -2,8 +2,8 @@
 id: gnc-trajectory-replan-latency-2025-06
 domain: gnc
 system: booster-b19
-author: richiksc
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2025-06-02

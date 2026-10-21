@@ -2,8 +2,8 @@
 id: prop-lox-dome-priming-waterhammer-2025-08
 domain: propulsion
 system: raptor-3
-author: jakewmeyer
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2025-08-12

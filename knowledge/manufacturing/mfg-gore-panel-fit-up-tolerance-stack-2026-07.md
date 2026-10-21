@@ -2,8 +2,8 @@
 id: mfg-gore-panel-fit-up-tolerance-stack-2026-07
 domain: manufacturing
 system: high-bay-3
-author: AstralZebulon
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2026-07-02

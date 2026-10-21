@@ -2,8 +2,8 @@
 id: sw-sim-in-the-loop-coverage-gap-2026-06
 domain: flight-software
 system: flight-software-v7
-author: aryamankha
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2026-06-22

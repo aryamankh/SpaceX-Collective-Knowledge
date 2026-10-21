@@ -2,8 +2,8 @@
 id: gse-methane-detector-false-positive-2025-01
 domain: ground-systems
 system: ols-tower-2
-author: kknox
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2025-01-11

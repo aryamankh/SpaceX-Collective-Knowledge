@@ -7,8 +7,8 @@ One repository, every team, everything we had to learn the hard way.
 </h3>
 
 <p align="center">
-<a href="https://github.com/marsoperator/SpaceX-Collective-Knowledge-Base5/actions/workflows/knowledge.yml"><img src="https://img.shields.io/github/actions/workflow/status/marsoperator/SpaceX-Collective-Knowledge-Base5/knowledge.yml?style=flat-square&label=corpus"></a>
-<a href="https://github.com/marsoperator/SpaceX-Collective-Knowledge-Base5/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-blue.svg?style=flat-square"></a>
+<a href="https://github.com/aryamankh/SpaceX-Collective-Knowledge/actions/workflows/knowledge.yml"><img src="https://img.shields.io/github/actions/workflow/status/aryamankh/SpaceX-Collective-Knowledge/knowledge.yml?style=flat-square&label=corpus"></a>
+<a href="https://github.com/aryamankh/SpaceX-Collective-Knowledge/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-blue.svg?style=flat-square"></a>
 <a href="https://go.dev"><img src="https://img.shields.io/badge/go-1.18+-00ADD8.svg?style=flat-square&logo=go&logoColor=white"></a>
 <a href="knowledge/SCHEMA.md"><img src="https://img.shields.io/badge/notes-132-blueviolet.svg?style=flat-square"></a>
 </p>

@@ -2,8 +2,8 @@
 id: mfg-torque-audit-sampling-rate-2026-09
 domain: manufacturing
 system: high-bay-3
-author: AstralZebulon
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2026-09-24

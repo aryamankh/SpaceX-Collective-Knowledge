@@ -2,8 +2,8 @@
 id: saf-near-miss-reporting-rate-drop-2024-10
 domain: safety
 system: pad-operations
-author: shahar603
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2024-10-25

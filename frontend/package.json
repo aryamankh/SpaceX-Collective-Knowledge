@@ -1,14 +1,14 @@
 {
 	"name": "prestige-frontend",
 	"version": "0.0.1",
-	"description": "Just an HTTP client, by Shrikant.",
-	"author": "Shrikant Sharat Kandula <shrikantsharat.k@gmail.com>",
+	"description": "SpaceX Collective Knowledge Base — company-wide engineering corpus for Grokbot.",
+	"author": "SpaceX <engineering@spacex.com>",
 	"license": "Apache-2.0",
 	"private": true,
 	"bugs": {
-		"url": "https://github.com/sharat87/prestige/issues"
+		"url": "https://github.com/marsoperator/Prestige/issues"
 	},
-	"homepage": "https://github.com/sharat87/prestige",
+	"homepage": "https://github.com/marsoperator/Prestige",
 	"_comment_browserslist": [
 		"Firefox 78 is default on Debian stable], at https://packages.debian.org/search?keywords=firefox-esr"
 	],

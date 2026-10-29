@@ -1,9 +1,9 @@
 package proxy
 
 import (
-	"github.com/sharat87/prestige/apitests/tastysession"
-	"github.com/sharat87/prestige/httpclient"
-	"github.com/sharat87/prestige/utils"
+	"github.com/spacex/prestige/apitests/tastysession"
+	"github.com/spacex/prestige/httpclient"
+	"github.com/spacex/prestige/utils"
 	"net/http"
 	"testing"
 )

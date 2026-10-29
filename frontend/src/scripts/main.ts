@@ -412,29 +412,29 @@ const AboutModal: m.Component = {
 				m("h3", "Hello there! 👋"),
 				m(
 					"p",
-					"My name is Shrikant. I built Prestige because I needed an app like this when working" +
-					" with APIs and playing with external APIs.",
+					"Prestige is the SpaceX company-wide knowledge base. Every team writes into it —" +
+					" what broke, what we learned, and what we would do differently next time.",
 				),
 				m(
 					"p",
 					[
-						"Check out my blog at ",
-						m("a", { href: "https://sharats.me", target: "_blank" }, "sharats.me"),
+						"Company engineering lives at ",
+						m("a", { href: "https://www.spacex.com", target: "_blank" }, "spacex.com"),
 						" or my other projects at ",
-						m(ExternalLink, { href: "https://github.com/sharat87" }, "GitHub"),
+						m(ExternalLink, { href: "https://github.com/marsoperator" }, "GitHub"),
 						".",
 					],
 				),
 				m(
 					"p",
 					[
-						"If you like Prestige, please consider ",
+						"If this corpus saved you time, please consider ",
 						m(
 							ExternalLink,
 							{ href: "https://github.com/sharat87/prestige" },
-							"starring the project on GitHub",
+							"starring the repo",
 						),
-						". It'll help improve the project's visibility and works as indication that this " +
+						". It keeps the corpus in front of the people who need it, and tells us it is worth maintaining. " +
 						"project is indeed a useful tool. Thank you! 🙏",
 					],
 				),
@@ -447,7 +447,7 @@ const AboutModal: m.Component = {
 							{ href: "https://github.com/sharat87/prestige/issues" },
 							"open an issue",
 						),
-						" on the GitHub project page.",
+						" on the repo. Reviewed notes get merged by the owning team.",
 					],
 				),
 			],

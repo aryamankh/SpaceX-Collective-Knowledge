@@ -65,11 +65,11 @@ const config: PlaywrightTestConfig = {
 	],
 
 	webServer: {
-		command: "./prestige",
+		command: "./kb",
 		env: {
-			PRESTIGE_BIND: ":" + serverPort,
-			PRESTIGE_DATABASE_URI: "mongodb://user:pass@localhost/ui-tests?authSource=admin",
-			PRESTIGE_SECRET_KEY: btoa("a secret with exactly <32> bytes"),
+			KB_BIND: ":" + serverPort,
+			KB_DATABASE_URI: "mongodb://user:pass@localhost/ui-tests?authSource=admin",
+			KB_SECRET_KEY: btoa("a secret with exactly <32> bytes"),
 		},
 		url: "http://localhost:" + serverPort,
 		reuseExistingServer: !isCI,

@@ -14,7 +14,7 @@ import "codemirror/mode/javascript/javascript"
 import "codemirror/mode/htmlmixed/htmlmixed"
 import * as acorn from "acorn"
 
-interface PrestigeState {
+interface KbState {
 	context: string
 	bodyJustStarted: boolean
 	jsState: unknown
@@ -40,13 +40,13 @@ payload body here| request-body
 
 */
 
-CodeMirror.defineMode("prestige", prestigeMode)
+CodeMirror.defineMode("kb", kbMode)
 CodeMirror.defineMode("javascript-custom", javascriptCustomMode)
 
-function prestigeMode(
+function kbMode(
 	config: CodeMirror.EditorConfiguration,
 	// Unused modeOptions: Record<string, any>,
-): CodeMirror.Mode<PrestigeState> {
+): CodeMirror.Mode<KbState> {
 	const jsMode = CodeMirror.getMode(config, "javascript-custom")
 	const jsonMode = CodeMirror.getMode(
 		config,
@@ -54,7 +54,7 @@ function prestigeMode(
 	)
 
 	return {
-		name: "prestige",
+		name: "kb",
 		lineComment: "#",
 		token,
 		startState,
@@ -62,7 +62,7 @@ function prestigeMode(
 		copyState,
 	}
 
-	function startState(): PrestigeState {
+	function startState(): KbState {
 		return {
 			context: "request-space-1",
 			bodyJustStarted: false,
@@ -72,7 +72,7 @@ function prestigeMode(
 		}
 	}
 
-	function copyState(state: PrestigeState): PrestigeState {
+	function copyState(state: KbState): KbState {
 		return {
 			...state,
 			jsState: state.jsState == null ? null : (CodeMirror as any).copyState(jsMode, state.jsState),
@@ -80,7 +80,7 @@ function prestigeMode(
 		}
 	}
 
-	function token(stream: CodeMirror.StringStream, state: PrestigeState): string | null {
+	function token(stream: CodeMirror.StringStream, state: KbState): string | null {
 		const { bodyJustStarted } = state
 		state.bodyJustStarted = false
 
@@ -198,7 +198,7 @@ function prestigeMode(
 		return null
 	}
 
-	function blankLine(state: PrestigeState) {
+	function blankLine(state: KbState) {
 		if (state.context.startsWith("request-headers")) {
 			state.context = "request-body"
 			state.bodyJustStarted = true
@@ -284,7 +284,7 @@ interface AcornSyntaxError extends SyntaxError {
 	loc: acorn.Position
 }
 
-CodeMirror.registerHelper("lint", "prestige", (text: string/*, options: any*/): LintItem[] => {
+CodeMirror.registerHelper("lint", "kb", (text: string/*, options: any*/): LintItem[] => {
 	const flags: LintItem[] = []
 	const lines: string[] = text.split("\n")
 

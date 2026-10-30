@@ -4,7 +4,7 @@ import "codemirror/addon/runmode/runmode"
 // Following line is required so that Prestige mode's definition is loaded.
 import "_/codemirror"
 
-const prestigeMode = CodeMirror.getMode(CodeMirror.defaults, "prestige")
+const kbMode = CodeMirror.getMode(CodeMirror.defaults, "kb")
 const javascriptCustomMode = CodeMirror.getMode(CodeMirror.defaults, "javascript-custom")
 
 type TokenTuple = [style: null | string, text: string]
@@ -38,7 +38,7 @@ function runMode(lines: string[], mode: CodeMirror.Mode<unknown>): TokenTuple[] 
 }
 
 function runModePrestige(lines: string[]): TokenTuple[] {
-	return runMode(lines, prestigeMode)
+	return runMode(lines, kbMode)
 }
 
 test("simple sheet", async () => {

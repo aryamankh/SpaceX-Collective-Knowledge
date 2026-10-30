@@ -8,7 +8,7 @@ node_modules
 /frontend/dist-*
 /frontend/coverage
 
-/ui-tests/prestige
+/ui-tests/kb
 /ui-tests/test-results/
 /ui-tests/playwright-report/
 
@@ -18,7 +18,7 @@ node_modules
 
 env-*.sh
 /package.tar.gz
-/prestige
+/kb
 
 .*cache
 

@@ -1,7 +1,7 @@
 import CodeMirror from "codemirror"
 import "codemirror/addon/runmode/runmode"
 
-// Following line is required so that Prestige mode's definition is loaded.
+// Following line is required so that knowledge base mode's definition is loaded.
 import "_/codemirror"
 
 const kbMode = CodeMirror.getMode(CodeMirror.defaults, "kb")
@@ -37,12 +37,12 @@ function runMode(lines: string[], mode: CodeMirror.Mode<unknown>): TokenTuple[] 
 	return tokens
 }
 
-function runModePrestige(lines: string[]): TokenTuple[] {
+function runModeKb(lines: string[]): TokenTuple[] {
 	return runMode(lines, kbMode)
 }
 
 test("simple sheet", async () => {
-	const tokens = runModePrestige([
+	const tokens = runModeKb([
 		"GET https://httpbun.com/get",
 	])
 	expect(tokens).toEqual([
@@ -52,7 +52,7 @@ test("simple sheet", async () => {
 })
 
 test("comment with a link", async () => {
-	const tokens = runModePrestige([
+	const tokens = runModeKb([
 		"# Go to https://httpbun.com to find out!",
 	])
 	expect(tokens).toEqual([
@@ -63,7 +63,7 @@ test("comment with a link", async () => {
 })
 
 test("request with headers", async () => {
-	const tokens = runModePrestige([
+	const tokens = runModeKb([
 		"GET https://httpbun.com/headers",
 		"Content-Type: application/json",
 		"X-More-Stuff: more stuff value here",
@@ -83,7 +83,7 @@ test("request with headers", async () => {
 })
 
 test("request with javascript with template string in body", async () => {
-	const tokens = runModePrestige([
+	const tokens = runModeKb([
 		"POST https://httpbun.com/post",
 		"",
 		"= `abc ${1+2} def`",
@@ -105,7 +105,7 @@ test("request with javascript with template string in body", async () => {
 })
 
 test("two GET requests", async () => {
-	const tokens = runModePrestige([
+	const tokens = runModeKb([
 		"GET https://httpbun.com/get",
 		"",
 		"###",
@@ -126,7 +126,7 @@ test("two GET requests", async () => {
 })
 
 test("request with initial header", async () => {
-	const tokens = runModePrestige([
+	const tokens = runModeKb([
 		"###",
 		"",
 		"GET https://httpbun.com/anything",
@@ -141,7 +141,7 @@ test("request with initial header", async () => {
 })
 
 test("request with JSON body", async () => {
-	const tokens = runModePrestige([
+	const tokens = runModeKb([
 		"PATCH https://httpbun.com/patch",
 		"Content-Type: application/json",
 		"",

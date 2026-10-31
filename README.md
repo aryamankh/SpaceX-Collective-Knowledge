@@ -125,3 +125,10 @@ Apache-2.0. Notes are internal by default; no controlled drawings inline.
 <p align="center">
   <i>An independent project, not affiliated with or endorsed by Space Exploration Technologies Corp.</i>
 </p>
+
+## Prior art
+
+The workspace, the gist storage layer, the proxy and the OAuth exchange are derived from
+[Prestige](https://github.com/sharat87/prestige) by Shrikant Sharat Kandala, Apache-2.0.
+The corpus, its schema, the ingestion pipeline and the domain layout are original to this repository.
+See [NOTICE](NOTICE) for the full attribution.

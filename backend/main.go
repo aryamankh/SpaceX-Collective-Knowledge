@@ -2,10 +2,10 @@ package main
 
 import (
 	"context"
-	"github.com/spacex/prestige/config"
-	"github.com/spacex/prestige/dbclient"
-	"github.com/spacex/prestige/httpclient"
-	"github.com/spacex/prestige/mux"
+	"github.com/spacex/kb/config"
+	"github.com/spacex/kb/dbclient"
+	"github.com/spacex/kb/httpclient"
+	"github.com/spacex/kb/mux"
 	"log"
 	"net"
 	"net/http"
@@ -38,7 +38,7 @@ func main() {
 		}
 	}(m)
 
-	if uri := os.Getenv("PRESTIGE_DATABASE_URI"); uri != "" {
+	if uri := os.Getenv("KB_DATABASE_URI"); uri != "" {
 		m.UseDBClient(dbclient.New(context.TODO(), uri))
 	}
 
@@ -46,7 +46,7 @@ func main() {
 
 	m.UseHTTPClient(httpclient.New())
 
-	// TODO: Prefix all environment variables with `PRESTIGE_`.
+	// TODO: Prefix all environment variables with `KB_`.
 	if os.Getenv("RECAPTCHA_PROJECT_ID") != "" {
 		log.Print("Recaptcha enabled")
 		m.UseRecaptcha(

@@ -55,9 +55,9 @@ jobs:
           success() && github.event_name == 'push' && github.ref == 'refs/heads/master'
         run: |
           ./manage.sh build-for-docker
-          docker build -t ghcr.io/${{ github.actor }}/prestige:latest .
+          docker build -t ghcr.io/${{ github.actor }}/kb:latest .
           docker login ghcr.io --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }}
-          docker push --all-tags ghcr.io/${{ github.actor }}/prestige
+          docker push --all-tags ghcr.io/${{ github.actor }}/kb
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

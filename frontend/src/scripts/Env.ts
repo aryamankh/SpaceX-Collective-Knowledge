@@ -3,22 +3,22 @@ import m from "mithril"
 declare const process: {
 	env: {
 		NODE_ENV?: string
-		PRESTIGE_ALLOWED_HOSTS: string
-		PRESTIGE_FRONTEND_ROLLBAR_TOKEN?: string
-		PRESTIGE_EXT_URL_PREFIX?: string
+		KB_ALLOWED_HOSTS: string
+		KB_FRONTEND_ROLLBAR_TOKEN?: string
+		KB_EXT_URL_PREFIX?: string
 	}
 }
 
 const NODE_ENV = process.env.NODE_ENV || "production"
 
-const PRESTIGE_BACKEND = "/"
+const KB_BACKEND = "/"
 
-export const GIST_API_PREFIX = PRESTIGE_BACKEND + "gist/"
+export const GIST_API_PREFIX = KB_BACKEND + "gist/"
 
-export const EXT_URL_PREFIX = (process.env.PRESTIGE_EXT_URL_PREFIX || "").trim()
+export const EXT_URL_PREFIX = (process.env.KB_EXT_URL_PREFIX || "").trim()
 
 export const rollbarToken: null | string = (() => {
-	const token = (process.env.PRESTIGE_FRONTEND_ROLLBAR_TOKEN || "").trim()
+	const token = (process.env.KB_FRONTEND_ROLLBAR_TOKEN || "").trim()
 	return token != null && token !== "" ? token : null
 })()
 
@@ -32,7 +32,7 @@ export async function getRecaptchaSiteKey(): Promise<string> {
 	if (recaptchaSiteKey == null) {
 		const response = await m.request<{ recaptchaSiteKey: string }>({
 			method: "GET",
-			url: PRESTIGE_BACKEND + "env",
+			url: KB_BACKEND + "env",
 		})
 		recaptchaSiteKey = response.recaptchaSiteKey
 	}
@@ -44,20 +44,20 @@ export function isDev(): boolean {
 }
 
 export function proxyUrl(): string {
-	console.log("proxyUrl", PRESTIGE_BACKEND)
-	return PRESTIGE_BACKEND + "proxy"
+	console.log("proxyUrl", KB_BACKEND)
+	return KB_BACKEND + "proxy"
 }
 
 export function authUrl(): string {
-	return PRESTIGE_BACKEND + "auth/"
+	return KB_BACKEND + "auth/"
 }
 
 export function storageUrl(): string {
 	// Commented out since support for storage backend is deprioritized/almost-deprecated.
-	return ""  // PRESTIGE_BACKEND + "storage/"
+	return ""  // KB_BACKEND + "storage/"
 }
 
 export function allowedToStart(): boolean {
-	return process.env.PRESTIGE_ALLOWED_HOSTS == null ||
-		process.env.PRESTIGE_ALLOWED_HOSTS.split(",").includes(window.location.host)
+	return process.env.KB_ALLOWED_HOSTS == null ||
+		process.env.KB_ALLOWED_HOSTS.split(",").includes(window.location.host)
 }

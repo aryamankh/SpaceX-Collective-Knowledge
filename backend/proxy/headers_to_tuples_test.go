@@ -2,7 +2,7 @@ package proxy
 
 import (
 	"github.com/google/go-cmp/cmp"
-	"github.com/spacex/prestige/utils"
+	"github.com/spacex/kb/utils"
 	"testing"
 )
 

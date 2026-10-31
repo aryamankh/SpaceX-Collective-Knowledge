@@ -20,15 +20,15 @@ import type { GistProvider } from "_/Persistence"
 import { currentSheet, getProvider, isManualSaveAvailable, SaveState } from "_/Persistence"
 import Rollbar from "rollbar"
 
-const REPO_URL = "https://github.com/sharat87/prestige"
+const REPO_URL = "https://github.com/sharat87/kb"
 
 window.addEventListener("load", main)
 window.addEventListener("error", onWindowError)
 window.addEventListener("unhandledrejection", onUnhandledRejection)
 
 function main() {
-	if (window.location.host === "prestigemad.com" && Object.keys(localStorage).find(k => k.startsWith("instance:")) == null) {
-		window.location.href = "https://prestige.dev"
+	if (window.location.host === "legacy.spacex.com" && Object.keys(localStorage).find(k => k.startsWith("instance:")) == null) {
+		window.location.href = "https://kb.spacex.com"
 		return
 	}
 
@@ -65,7 +65,7 @@ function main() {
 	}
 
 	m.request<GitHubApiResponse>(
-		`${ Env.EXT_URL_PREFIX }https://api.github.com/repos/sharat87/prestige`,
+		`${ Env.EXT_URL_PREFIX }https://api.github.com/repos/sharat87/kb`,
 	).then((response) => {
 		RepoStats.stars = response.stargazers_count
 	})
@@ -111,16 +111,16 @@ const Layout: m.Component = {
 			ModalManager.render(),
 			Toaster.render(),
 			m("style", styleOverrides()),
-			window.location.host === "prestigemad.com" && m("div.old-domain-notice", [
+			window.location.host === "legacy.spacex.com" && m("div.old-domain-notice", [
 				m("h2", "Hey!"),
 				m("p", [
-					"We are moving to a new domain (prestige.dev). Please use the following link to download your local data from this domain, and import it on ",
-					m("a", { href: "https://prestige.dev" }, "prestige.dev"),
+					"We are moving to a new domain (kb.spacex.com). Please use the following link to download your local data from this domain, and import it on ",
+					m("a", { href: "https://kb.spacex.com" }, "kb.spacex.com"),
 					".",
 				]),
 				m("a", {
 					href: "data:text/plain;charset=utf-8," + encodeURIComponent(JSON.stringify(exportLocalStorage())),
-					download: "prestigemad-data.json",
+					download: "kbmad-data.json",
 				}, "Download export data"),
 			]),
 		]
@@ -191,14 +191,14 @@ function WorkspaceView(): m.Component {
 		return m("section.top-layout", [
 			m("header", [
 				m(".flex.items-end", [
-					m("h1.f3.mh2.mv0", "Prestige"),
+					m("h1.f3.mh2.mv0", "Collective Knowledge Base"),
 					m(".f6.i.ml3", "An HTTP client."),
 				]),
 				m(".flex.items-stretch", [
 					RepoStats.stars > 0 && m(".pv1.ph2.db.flex.items-center.silver", [
 						m(
 							NavLink,
-							{ href: REPO_URL, title: "Star Prestige on GitHub" },
+							{ href: REPO_URL, title: "Star the corpus on GitHub" },
 							[m(Icons.github), "Star: ", RepoStats.stars, m(Icons.arrowSquareOut)],
 						),
 					]),
@@ -412,7 +412,7 @@ const AboutModal: m.Component = {
 				m("h3", "Hello there! 👋"),
 				m(
 					"p",
-					"Prestige is the SpaceX company-wide knowledge base. Every team writes into it —" +
+					"This is the SpaceX Collective Knowledge Base. Every team writes into it —" +
 					" what broke, what we learned, and what we would do differently next time.",
 				),
 				m(
@@ -420,7 +420,7 @@ const AboutModal: m.Component = {
 					[
 						"Company engineering lives at ",
 						m("a", { href: "https://www.spacex.com", target: "_blank" }, "spacex.com"),
-						" or my other projects at ",
+						" and the org at ",
 						m(ExternalLink, { href: "https://github.com/marsoperator" }, "GitHub"),
 						".",
 					],
@@ -431,7 +431,7 @@ const AboutModal: m.Component = {
 						"If this corpus saved you time, please consider ",
 						m(
 							ExternalLink,
-							{ href: "https://github.com/sharat87/prestige" },
+							{ href: "https://github.com/marsoperator/Prestige" },
 							"starring the repo",
 						),
 						". It keeps the corpus in front of the people who need it, and tells us it is worth maintaining. " +
@@ -444,7 +444,7 @@ const AboutModal: m.Component = {
 						"If you found a bug or have a feature request, please ",
 						m(
 							ExternalLink,
-							{ href: "https://github.com/sharat87/prestige/issues" },
+							{ href: "https://github.com/marsoperator/Prestige/issues" },
 							"open an issue",
 						),
 						" on the repo. Reviewed notes get merged by the owning team.",

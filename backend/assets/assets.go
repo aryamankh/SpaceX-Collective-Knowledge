@@ -3,7 +3,7 @@ package assets
 import (
 	"context"
 	"embed"
-	"github.com/spacex/prestige/exchange"
+	"github.com/spacex/kb/exchange"
 	"log"
 	"mime"
 	"net/http"

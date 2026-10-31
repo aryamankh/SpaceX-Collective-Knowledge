@@ -1,8 +1,8 @@
 package proxy
 
 import (
-	"github.com/spacex/prestige/apitests/tastysession"
-	"github.com/spacex/prestige/httpclient"
+	"github.com/spacex/kb/apitests/tastysession"
+	"github.com/spacex/kb/httpclient"
 	"net/http"
 	"testing"
 )

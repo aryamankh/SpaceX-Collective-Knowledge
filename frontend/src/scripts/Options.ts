@@ -175,8 +175,8 @@ export default function OptionsModal(): m.Component<{ doClose: () => void}> {
 				),
 			]),
 			m("p.pa1", [
-				m(".b.pb1", "Import from prestigemad.com"),
-				m("p.mt0", "If you've been a user on our old domain, prestigemad.com, and have exported your data there, you can import using the form below:"),
+				m(".b.pb1", "Import from legacy.spacex.com"),
+				m("p.mt0", "If you've been a user on our old domain, legacy.spacex.com, and have exported your data there, you can import using the form below:"),
 				m(
 					"input",
 					{

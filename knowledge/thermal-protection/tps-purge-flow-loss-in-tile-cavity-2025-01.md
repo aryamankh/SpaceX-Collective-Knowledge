@@ -2,8 +2,8 @@
 id: tps-purge-flow-loss-in-tile-cavity-2025-01
 domain: thermal-protection
 system: starship-heat-shield
-author: emmedve1
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2025-01-07

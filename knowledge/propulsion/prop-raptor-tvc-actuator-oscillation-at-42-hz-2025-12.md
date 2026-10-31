@@ -2,8 +2,8 @@
 id: prop-raptor-tvc-actuator-oscillation-at-42-hz-2025-12
 domain: propulsion
 system: raptor-3
-author: jakewmeyer
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2025-12-07

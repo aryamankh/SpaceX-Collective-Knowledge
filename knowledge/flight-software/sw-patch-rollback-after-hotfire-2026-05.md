@@ -2,8 +2,8 @@
 id: sw-patch-rollback-after-hotfire-2026-05
 domain: flight-software
 system: flight-software-v7
-author: aryamankha
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2026-05-23

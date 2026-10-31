@@ -2,8 +2,8 @@
 id: mat-adhesive-shelf-life-control-2024-07
 domain: materials
 system: inconel-718
-author: AlbericTrancart
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2024-07-07

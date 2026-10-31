@@ -2,8 +2,8 @@
 id: mat-fastener-hydrogen-embrittlement-2024-07
 domain: materials
 system: inconel-718
-author: AlbericTrancart
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2024-07-14

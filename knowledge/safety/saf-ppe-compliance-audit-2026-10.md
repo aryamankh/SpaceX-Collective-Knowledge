@@ -2,8 +2,8 @@
 id: saf-ppe-compliance-audit-2026-10
 domain: safety
 system: pad-operations
-author: shahar603
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2026-10-08

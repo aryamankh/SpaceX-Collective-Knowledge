@@ -2,8 +2,8 @@
 id: mfg-springback-compensation-2025-07
 domain: manufacturing
 system: high-bay-3
-author: AstralZebulon
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2025-07-05

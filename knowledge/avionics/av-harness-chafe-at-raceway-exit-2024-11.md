@@ -2,8 +2,8 @@
 id: av-harness-chafe-at-raceway-exit-2024-11
 domain: avionics
 system: flight-computer-b2
-author: collierrgbsitisfise
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2024-11-28

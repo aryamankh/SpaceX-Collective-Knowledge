@@ -2,8 +2,8 @@
 id: sw-telemetry-encoder-buffer-overrun-2026-06
 domain: flight-software
 system: flight-software-v7
-author: aryamankha
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2026-06-29

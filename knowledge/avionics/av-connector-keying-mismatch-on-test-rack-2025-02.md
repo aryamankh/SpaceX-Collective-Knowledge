@@ -2,8 +2,8 @@
 id: av-connector-keying-mismatch-on-test-rack-2025-02
 domain: avionics
 system: flight-computer-b2
-author: collierrgbsitisfise
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2025-02-01

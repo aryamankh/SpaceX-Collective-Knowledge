@@ -2,8 +2,8 @@
 id: mat-copv-liner-permeability-2024-09
 domain: materials
 system: inconel-718
-author: AlbericTrancart
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2024-09-27

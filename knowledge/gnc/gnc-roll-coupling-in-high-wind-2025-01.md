@@ -2,8 +2,8 @@
 id: gnc-roll-coupling-in-high-wind-2025-01
 domain: gnc
 system: booster-b19
-author: richiksc
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-01-25

@@ -2,8 +2,8 @@
 id: str-tile-rail-pull-out-after-cryo-cycle-2024-09
 domain: structures
 system: starship-s38
-author: mattythorne
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2024-09-08

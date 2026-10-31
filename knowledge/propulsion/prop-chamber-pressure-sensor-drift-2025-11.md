@@ -2,8 +2,8 @@
 id: prop-chamber-pressure-sensor-drift-2025-11
 domain: propulsion
 system: raptor-3
-author: jakewmeyer
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2025-11-14

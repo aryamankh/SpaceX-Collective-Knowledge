@@ -2,8 +2,8 @@
 id: mfg-paint-booth-humidity-control-2026-03
 domain: manufacturing
 system: high-bay-3
-author: AstralZebulon
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2026-03-13

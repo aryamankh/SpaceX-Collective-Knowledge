@@ -2,8 +2,8 @@
 id: prop-regen-channel-pressure-drop-drift-2026-07
 domain: propulsion
 system: raptor-3
-author: jakewmeyer
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2026-07-16

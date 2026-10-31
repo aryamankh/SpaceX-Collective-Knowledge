@@ -2,8 +2,8 @@
 id: prop-mixture-ratio-trim-during-hover-2024-07
 domain: propulsion
 system: raptor-3
-author: jakewmeyer
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2024-07-30

@@ -2,8 +2,8 @@
 id: saf-fall-protection-at-height-40-m-2024-07
 domain: safety
 system: pad-operations
-author: shahar603
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2024-07-01

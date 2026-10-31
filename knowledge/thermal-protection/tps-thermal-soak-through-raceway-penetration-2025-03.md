@@ -2,8 +2,8 @@
 id: tps-thermal-soak-through-raceway-penetration-2025-03
 domain: thermal-protection
 system: starship-heat-shield
-author: emmedve1
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-03-07

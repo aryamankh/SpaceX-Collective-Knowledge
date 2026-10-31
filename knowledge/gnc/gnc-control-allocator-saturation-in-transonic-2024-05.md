@@ -2,8 +2,8 @@
 id: gnc-control-allocator-saturation-in-transonic-2024-05
 domain: gnc
 system: booster-b19
-author: richiksc
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2024-05-26

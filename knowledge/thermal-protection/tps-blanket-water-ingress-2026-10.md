@@ -2,8 +2,8 @@
 id: tps-blanket-water-ingress-2026-10
 domain: thermal-protection
 system: starship-heat-shield
-author: emmedve1
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2026-10-05

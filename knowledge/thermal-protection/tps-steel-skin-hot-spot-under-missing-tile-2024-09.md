@@ -2,8 +2,8 @@
 id: tps-steel-skin-hot-spot-under-missing-tile-2024-09
 domain: thermal-protection
 system: starship-heat-shield
-author: emmedve1
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2024-09-13

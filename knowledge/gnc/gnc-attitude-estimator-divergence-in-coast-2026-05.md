@@ -2,8 +2,8 @@
 id: gnc-attitude-estimator-divergence-in-coast-2026-05
 domain: gnc
 system: booster-b19
-author: richiksc
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2026-05-04

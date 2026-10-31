@@ -2,8 +2,8 @@
 id: ops-range-call-timing-on-hold-2026-03
 domain: flight-ops
 system: launch-complex-39a
-author: CAM-Gerlach
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2026-03-29

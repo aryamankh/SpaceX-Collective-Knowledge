@@ -2,8 +2,8 @@
 id: sw-mode-transition-race-in-sequencer-2026-07
 domain: flight-software
 system: flight-software-v7
-author: aryamankha
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2026-07-08

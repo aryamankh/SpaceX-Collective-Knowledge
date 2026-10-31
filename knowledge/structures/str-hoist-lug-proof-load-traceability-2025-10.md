@@ -2,8 +2,8 @@
 id: str-hoist-lug-proof-load-traceability-2025-10
 domain: structures
 system: starship-s38
-author: mattythorne
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2025-10-22

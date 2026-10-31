@@ -2,8 +2,8 @@
 id: mat-seal-swell-in-methalox-2025-10
 domain: materials
 system: inconel-718
-author: AlbericTrancart
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-10-03

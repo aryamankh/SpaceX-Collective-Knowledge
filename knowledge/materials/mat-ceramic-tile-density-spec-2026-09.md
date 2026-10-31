@@ -2,8 +2,8 @@
 id: mat-ceramic-tile-density-spec-2026-09
 domain: materials
 system: inconel-718
-author: AlbericTrancart
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2026-09-19

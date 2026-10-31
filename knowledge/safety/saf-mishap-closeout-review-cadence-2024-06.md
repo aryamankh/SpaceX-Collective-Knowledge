@@ -2,8 +2,8 @@
 id: saf-mishap-closeout-review-cadence-2024-06
 domain: safety
 system: pad-operations
-author: shahar603
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2024-06-03

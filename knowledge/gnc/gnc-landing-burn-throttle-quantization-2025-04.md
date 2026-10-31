@@ -2,8 +2,8 @@
 id: gnc-landing-burn-throttle-quantization-2025-04
 domain: gnc
 system: booster-b19
-author: richiksc
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-04-14

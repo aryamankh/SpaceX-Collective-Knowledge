@@ -2,8 +2,8 @@
 id: av-flight-computer-watchdog-reset-2025-10
 domain: avionics
 system: flight-computer-b2
-author: collierrgbsitisfise
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-10-28

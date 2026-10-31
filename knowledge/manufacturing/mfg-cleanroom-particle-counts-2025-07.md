@@ -2,8 +2,8 @@
 id: mfg-cleanroom-particle-counts-2025-07
 domain: manufacturing
 system: high-bay-3
-author: AstralZebulon
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2025-07-09

@@ -2,8 +2,8 @@
 id: gse-hold-down-preload-drift-2025-04
 domain: ground-systems
 system: ols-tower-2
-author: kknox
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2025-04-21

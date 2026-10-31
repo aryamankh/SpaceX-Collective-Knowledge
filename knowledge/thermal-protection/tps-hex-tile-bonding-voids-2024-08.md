@@ -2,8 +2,8 @@
 id: tps-hex-tile-bonding-voids-2024-08
 domain: thermal-protection
 system: starship-heat-shield
-author: emmedve1
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2024-08-30

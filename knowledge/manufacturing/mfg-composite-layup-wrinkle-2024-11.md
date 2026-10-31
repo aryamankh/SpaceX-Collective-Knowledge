@@ -2,8 +2,8 @@
 id: mfg-composite-layup-wrinkle-2024-11
 domain: manufacturing
 system: high-bay-3
-author: AstralZebulon
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2024-11-23

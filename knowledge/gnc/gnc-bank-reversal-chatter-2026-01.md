@@ -2,8 +2,8 @@
 id: gnc-bank-reversal-chatter-2026-01
 domain: gnc
 system: booster-b19
-author: richiksc
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2026-01-12

@@ -2,8 +2,8 @@
 id: sw-watchdog-timeout-during-engine-start-2024-08
 domain: flight-software
 system: flight-software-v7
-author: aryamankha
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2024-08-10

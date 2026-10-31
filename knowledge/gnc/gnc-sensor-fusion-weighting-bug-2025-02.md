@@ -2,8 +2,8 @@
 id: gnc-sensor-fusion-weighting-bug-2025-02
 domain: gnc
 system: booster-b19
-author: richiksc
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-02-17

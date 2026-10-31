@@ -2,8 +2,8 @@
 id: gse-ship-qd-plate-alignment-2025-03
 domain: ground-systems
 system: ols-tower-2
-author: kknox
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-03-07

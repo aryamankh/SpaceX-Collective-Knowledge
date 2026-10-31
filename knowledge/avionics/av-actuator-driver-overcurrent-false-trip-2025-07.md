@@ -2,8 +2,8 @@
 id: av-actuator-driver-overcurrent-false-trip-2025-07
 domain: avionics
 system: flight-computer-b2
-author: collierrgbsitisfise
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-07-21

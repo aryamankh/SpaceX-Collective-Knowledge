@@ -2,8 +2,8 @@
 id: str-flap-hinge-lug-fatigue-2024-08
 domain: structures
 system: starship-s38
-author: mattythorne
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2024-08-21

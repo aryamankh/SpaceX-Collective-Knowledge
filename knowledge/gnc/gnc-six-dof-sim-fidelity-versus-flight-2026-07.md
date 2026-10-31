@@ -2,8 +2,8 @@
 id: gnc-six-dof-sim-fidelity-versus-flight-2026-07
 domain: gnc
 system: booster-b19
-author: richiksc
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2026-07-02

@@ -2,8 +2,8 @@
 id: tps-tile-shear-test-sampling-2025-09
 domain: thermal-protection
 system: starship-heat-shield
-author: emmedve1
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-09-16

@@ -1,4 +1,4 @@
-module github.com/sharat87/prestige
+module github.com/spacex/prestige
 
 go 1.18
 

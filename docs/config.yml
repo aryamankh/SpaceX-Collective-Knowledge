@@ -1,13 +1,13 @@
-title: Prestige Docs
+title: Prestige — SpaceX Engineering Knowledge Base
 
-baseURL: https://prestige.dev/docs/
+baseURL: https://prestige.spacex.com/docs/
 languageCode: en-us
 
 theme: hugo-book
 
 params:
   BookTheme: auto
-  BookRepo: https://github.com/sharat87/prestige
+  BookRepo: https://github.com/marsoperator/Prestige
 
 markup:
   highlight:

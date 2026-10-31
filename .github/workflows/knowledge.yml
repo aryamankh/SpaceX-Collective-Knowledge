@@ -1,0 +1,30 @@
+name: "Knowledge corpus"
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths: ["knowledge/**", "backend/tools/ingest/**", "manage.sh", ".github/workflows/knowledge.yml"]
+  pull_request:
+    paths: ["knowledge/**"]
+
+jobs:
+  validate:
+    timeout-minutes: 10
+    runs-on: "ubuntu-latest"
+    steps:
+      - uses: "actions/checkout@v4"
+      - uses: "actions/setup-go@v5"
+        with:
+          go-version: "^1.18.3"
+      - name: "Schema, uniqueness and review checks"
+        run: "./manage.sh ingest-kb"
+      - name: "Upload corpus"
+        uses: "actions/upload-artifact@v4"
+        with:
+          name: "corpus-${{ github.sha }}"
+          path: dist/corpus.jsonl
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true

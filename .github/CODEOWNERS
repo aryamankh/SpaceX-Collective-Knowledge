@@ -1,0 +1,15 @@
+# Owning team must review every note in its domain.
+/knowledge/propulsion/          @jakewmeyer
+/knowledge/structures/          @mattythorne
+/knowledge/avionics/            @collierrgbsitisfise
+/knowledge/gnc/                 @richiksc
+/knowledge/thermal-protection/  @emmedve1
+/knowledge/ground-systems/      @kknox
+/knowledge/manufacturing/       @AstralZebulon
+/knowledge/materials/           @AlbericTrancart
+/knowledge/flight-software/     @aryamankha
+/knowledge/flight-ops/          @CAM-Gerlach
+/knowledge/safety/              @shahar603
+/knowledge/SCHEMA.md            @CAM-Gerlach
+/knowledge/people.yaml          @marsoperator
+/backend/tools/ingest/          @aryamankha

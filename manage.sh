@@ -32,6 +32,12 @@ build-backend() (
 		.
 )
 
+ingest-kb() (
+        cd backend
+        go run ./tools/ingest -root ../knowledge -out ../dist
+)
+
+
 lint-backend() {
 	cd backend
 	go vet ./...

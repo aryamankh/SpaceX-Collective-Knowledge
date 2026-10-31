@@ -1,134 +1,161 @@
-<p align="center"><img src="https://live.staticflickr.com/65535/49185149122_37f5c52e43_k.jpg" alt="Starship on the pad"></p>
+<div align="center">
 
-<h1 align="center">SpaceX Collective Knowledge Base</h1>
+<img src="https://i.imgur.com/yULmKup.png" alt="SpaceX Collective Knowledge Base" width="100%">
 
-<h3 align="center">
-One repository, every team, everything we had to learn the hard way.
-</h3>
+# SpaceX Collective Knowledge Base
 
-<p align="center">
-<a href="https://github.com/aryamankh/SpaceX-Collective-Knowledge/actions/workflows/knowledge.yml"><img src="https://img.shields.io/github/actions/workflow/status/aryamankh/SpaceX-Collective-Knowledge/knowledge.yml?style=flat-square&label=corpus"></a>
-<a href="https://github.com/aryamankh/SpaceX-Collective-Knowledge/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-blue.svg?style=flat-square"></a>
-<a href="https://go.dev"><img src="https://img.shields.io/badge/go-1.18+-00ADD8.svg?style=flat-square&logo=go&logoColor=white"></a>
-<a href="knowledge/SCHEMA.md"><img src="https://img.shields.io/badge/notes-132-blueviolet.svg?style=flat-square"></a>
-</p>
+[![corpus](https://img.shields.io/badge/corpus-132%20notes-000000?style=flat-square)](knowledge/)
+[![domains](https://img.shields.io/badge/domains-11-000000?style=flat-square)](#domains)
+[![schema](https://img.shields.io/badge/schema-v2-000000?style=flat-square)](knowledge/SCHEMA.md)
+[![ingest](https://img.shields.io/github/actions/workflow/status/aryamankh/SpaceX-Collective-Knowledge-Database/knowledge.yml?style=flat-square&label=corpus)](.github/workflows/knowledge.yml)
+[![license](https://img.shields.io/badge/license-Apache--2.0-000000?style=flat-square)](LICENSE)
 
-<h4 align="center">
-  <i>
-    The company-wide engineering corpus. Personal notes, failure write-ups, process tips, design gotchas and ops tricks — written by the person who lived it, reviewed by the owning team, ingested by Grokbot.
-  </i>
-</h4>
+</div>
 
-<h3 align="center">
-<a href="knowledge/SCHEMA.md">Schema</a> - <a href="knowledge/index.json">Corpus Index</a> - <a href=".github/CODEOWNERS">Owners</a> - <a href="CONTRIBUTING.md">Contributing</a>
-<br/>
-</h3>
+## Purpose
 
-## Overview
+Versioned engineering corpus, maintained per domain, exported as a machine-readable dataset for Grokbot. The corpus is the single source of engineering knowledge for retrieval; the export is the only supported machine interface.
 
-The expensive lessons were already being learned. They just were not being kept. A note that lives in a chat thread is gone in a week; a note that lives here is read by the next engineer, by the reviewer, and by Grokbot when someone asks a question at 02:00 before a tanking operation.
+Scope:
 
-The rule is simple: if you had to figure it out, write it down.
+- one markdown note per event, dated, with fixed front-matter
+- one directory per domain, one owning team per directory
+- schema validation and corpus reproducibility enforced in CI
+- no runtime service, no database, no external dependency for reading the corpus
 
-## What belongs here
+## Domains
 
-| ✅ Belongs | ❌ Does not |
-|---|---|
-| Failure write-ups with a root cause and an owner | Drawings (link the document id) |
-| Design gotchas that cost you a day | Meeting minutes |
-| Ops tricks that are not in any runbook | Org charts |
-| Inspection and acceptance findings worth generalizing | Anything that belongs in a ticket |
-| Process notes: what the checklist should have said | Vendor marketing |
-| Corrections to a note that turned out to be wrong | Duplicates of the same lesson |
+| Directory | Scope | Notes |
+| --- | --- | :---: |
+| `knowledge/propulsion/` | engines, turbopumps, feed system, igniters, TVC | 12 |
+| `knowledge/structures/` | tanks, barrels, skirts, lugs, welds, load paths | 12 |
+| `knowledge/avionics/` | power, harnesses, buses, computers, telemetry | 12 |
+| `knowledge/gnc/` | guidance, navigation, control allocation, sensors | 12 |
+| `knowledge/thermal-protection/` | tiles, blankets, seals, purge, reentry heating | 12 |
+| `knowledge/ground-systems/` | GSE, quick disconnects, deluge, transport, hold-down | 12 |
+| `knowledge/manufacturing/` | layup, weld parameters, tooling, tolerances, rework | 12 |
+| `knowledge/materials/` | alloys, seals, adhesives, coatings, certifications | 12 |
+| `knowledge/flight-software/` | sequencer, fault handling, aborts, parameter tables | 12 |
+| `knowledge/flight-ops/` | countdown, range, recovery, weather, crew flow | 12 |
+| `knowledge/safety/` | LOTO, confined space, exclusion zones, mishap closeout | 12 |
 
-## Structure
+## Note format
 
-~~~
-knowledge/
-├── propulsion/           engines, turbomachinery, ignition, TVC
-├── structures/           tanks, barrels, frames, joints, COPVs
-├── avionics/             harness, computers, buses, sensors, power
-├── gnc/                  guidance, navigation, control, aero surfaces
-├── thermal-protection/   tiles, seals, blankets, purge, closeout
-├── ground-systems/       pad, GSE, tanking, quick disconnects
-├── manufacturing/        tooling, welding, fit-up, traceability
-├── materials/            alloys, seals, coatings, lots, certs
-├── flight-software/      sequencers, timing, faults, config
-├── flight-ops/           countdown, range, recovery, triage
-├── safety/               hazard analysis, LOTO, exclusion zones
-├── SCHEMA.md             format contract
-└── index.json            generated, never hand-edited
-~~~
-
-## Anatomy of a note
-
-Front-matter, then the story, then the evidence. Every field is machine-checked.
+Path: `knowledge/<domain>/<prefix>-<slug>-<YYYY-MM>.md`.
 
 ~~~yaml
 ---
-id: prop-raptor-tvc-oscillation-2026-04
+id: prop-raptor-tvc-actuator-oscillation-at-42-hz-2025-12
 domain: propulsion
 system: raptor-3
-author: jakewmeyer
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
-created: 2026-04-18
-tags: [tvc, oscillation, damping]
+date: 2025-12-04
+tags: [tvc, oscillation, hotfire, damping]
 ---
 ~~~
 
-Then `## Context`, `## What happened`, `## Root cause`, `## What we changed`, `## What we would do differently`, `## Evidence`. Numbers over adjectives: frequencies, pressures, torques, durations.
+Required fields: `id`, `domain`, `system`, `author`, `reviewed_by`, `status`, `severity`, `date`, `tags`.
 
-## Workflow
+`status` ∈ `draft`, `reviewed`, `superseded`. `severity` ∈ `low`, `medium`, `high`, `critical`.
 
-~~~mermaid
-flowchart LR
-    A[draft note] --> B[owning team review]
-    B --> C[independent reviewer]
-    C --> D[reviewed on main]
-    D --> E[Grokbot corpus]
+Body sections, in order:
+
+~~~text
+## What happened
+## What we changed
+## What we would do differently
+## Evidence
 ~~~
 
-`CODEOWNERS` routes every domain to its owning team. A note lands as `draft`, gets reviewed by someone from another team, and merges as `reviewed`. The reviewer stays in the front-matter — if the note is wrong later, we know who to ask. Leadership signs off on the ones that change how we build.
+`## Evidence` holds the trace, plot, part number or procedure reference. Notes are never deleted; superseded notes set `status: superseded` and reference the replacement.
 
-## Ingestion
+Full specification: [`knowledge/SCHEMA.md`](knowledge/SCHEMA.md).
+
+## Validation
 
 ~~~bash
 ./manage.sh ingest-kb
 ~~~
 
-Validates every note, then writes `dist/corpus.jsonl` — one record per note, stable field order, content hash — and regenerates `knowledge/index.json`. CI fails on any schema violation, so `main` is always ingestible and Grokbot never reads a broken corpus.
+Runs the validator over the tree and emits `dist/corpus.jsonl` and `knowledge/index.json`.
 
-## Running locally
+Validator rules:
+
+| Rule | Result |
+| --- | --- |
+| missing or malformed front-matter | fail |
+| `domain` differs from parent directory | fail |
+| duplicate `id` | fail |
+| invalid `status` or `severity` value | fail |
+| malformed `date` | fail |
+| body sections missing or out of order | fail |
+| `reviewed_by` equals `author` on `status: reviewed` | warning |
+
+Output format: one JSON object per line, keys sorted, `id` ascending, body verbatim, `sha256` over `id` and body, no build timestamps. Byte-identical across machines.
+
+## Local development
+
+Requirements: Go 1.22+, Node 20+.
 
 ~~~bash
-./manage.sh serve-backend     # API on :3041
-./manage.sh serve-frontend    # UI on :3040
-./manage.sh build-all         # full build, docs included
+git clone https://github.com/aryamankh/SpaceX-Collective-Knowledge-Database.git
+cd SpaceX-Collective-Knowledge-Database
+./manage.sh ingest-kb
+cd backend/tools/ingest && go vet ./... && go test ./...
+cd ../.. && ./manage.sh dev
 ~~~
 
-Requires Go 1.18+, Node 16+, and Hugo for the docs build.
+`manage.sh` targets: `build`, `ingest-kb`, `lint`, `test`, `dev`, `new-note`.
 
-## Provenance
+## Contribution procedure
 
-The application shell — HTTP session handling, storage abstraction, Gist integration, routing and the cookie UI — is derived from [Prestige](https://github.com/sharat87/prestige) by Shrikant Sharat Kandula, Apache-2.0. The corpus, its schema, the ingestion pipeline, the domain layout and the knowledge-base framing are ours. Attribution is kept in [NOTICE](NOTICE).
+1. `./manage.sh new-note <domain> "<title>"` scaffolds path, slug and front-matter.
+2. Fill body sections and attach evidence.
+3. Open a pull request; CODEOWNERS assigns the owning team as reviewer.
+4. Owner reviews the technical claim and evidence, not the prose.
+5. CI validates the note and rebuilds the corpus; merge requires a green build and an owner approval.
 
-## Ownership
+## Review and ownership
 
-Domain owners are in `CODEOWNERS`. The corpus is maintained by everyone who writes into it; the format is maintained by the ingestion owners. If a note is wrong, fix it in place and say what changed — do not open a ticket about it.
+Ownership is declared per directory in `.github/CODEOWNERS`. Each domain has one owning team and one required reviewer. The maintainer account holds review on `knowledge/SCHEMA.md`, `backend/tools/ingest/` and any change to the corpus format.
 
-## License
+## CI
 
-Apache-2.0. Notes are internal by default; no controlled drawings inline.
+`.github/workflows/knowledge.yml` runs on `push` and `pull_request`:
 
-<p align="center">
-  <i>An independent project, not affiliated with or endorsed by Space Exploration Technologies Corp.</i>
-</p>
+- schema validation of changed notes
+- corpus rebuild and reproducibility diff
+- `go vet` and unit tests on the ingest tool
+- CODEOWNERS coverage check per domain
+- staleness flag for notes older than 18 months with `status: reviewed`
+
+Failures block merge.
+
+## Layout
+
+~~~text
+knowledge/                 corpus, one directory per domain
+  SCHEMA.md                format specification
+  index.json               generated index
+backend/tools/ingest/      validator and exporter (Go)
+.github/workflows/         validation and reproducibility CI
+.github/CODEOWNERS         directory ownership
+assets/                    banner and documentation images
+manage.sh                  build, ingest, lint, test, dev, new-note
+dist/corpus.jsonl          generated export
+~~~
+
+## Versioning
+
+Corpus format is versioned in `knowledge/SCHEMA.md`. A format change requires a schema version bump and a migration note; consumers pin the version they read. Content changes do not bump the version.
 
 ## Prior art
 
-The workspace, the gist storage layer, the proxy and the OAuth exchange are derived from
-[Prestige](https://github.com/sharat87/prestige) by Shrikant Sharat Kandala, Apache-2.0.
-The corpus, its schema, the ingestion pipeline and the domain layout are original to this repository.
-See [NOTICE](NOTICE) for the full attribution.
+The workspace layer — gist-backed persistence, proxy, OAuth exchange and request editor — builds on [Prestige](https://github.com/sharat87/prestige) by Shrikant Sharat Kandula, Apache-2.0. The corpus, schema, ingestion pipeline and domain layout are original to this repository. See [NOTICE](NOTICE).
+
+## License
+
+Apache-2.0. See [LICENSE](LICENSE).

@@ -316,7 +316,7 @@ func jsMessageResponse(ex *exchange.Exchange, error string) {
 	}))
 
 	_, err := ex.ResponseWriter.Write([]byte(fmt.Sprintf(`<!doctype html>
-	<title>Prestige</title>
+	<title>SpaceX Collective Knowledge Base</title>
 	<h1>Finished. This window should close.</h1>
 	<script>
 	// TODO: Specify the incoming Origin here, instead of '*'.

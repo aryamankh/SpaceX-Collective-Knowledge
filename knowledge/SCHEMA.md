@@ -57,6 +57,6 @@ All required, in this order: `## Context`, `## What happened`, `## Root cause`,
 
 ## Ingestion
 
-`backend/tools/ingest` validates every note, then emits `dist/corpus.jsonl` and
+`./manage.sh ingest-kb` validates every note, then emits `dist/corpus.jsonl` and
 `knowledge/index.json`. CI fails on any schema violation, so `main` is always
 ingestible.

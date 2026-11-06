@@ -2,8 +2,8 @@
 id: saf-hazard-analysis-stale-after-mod-2026-02
 domain: safety
 system: pad-operations
-author: shahar603
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2026-02-07

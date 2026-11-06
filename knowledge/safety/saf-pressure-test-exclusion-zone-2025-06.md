@@ -2,8 +2,8 @@
 id: saf-pressure-test-exclusion-zone-2025-06
 domain: safety
 system: pad-operations
-author: shahar603
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-06-29

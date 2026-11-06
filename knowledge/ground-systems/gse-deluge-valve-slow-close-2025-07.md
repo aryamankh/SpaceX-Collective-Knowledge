@@ -2,8 +2,8 @@
 id: gse-deluge-valve-slow-close-2025-07
 domain: ground-systems
 system: ols-tower-2
-author: kknox
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2025-07-26

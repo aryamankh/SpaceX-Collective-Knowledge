@@ -2,8 +2,8 @@
 id: gse-cryo-pump-cavitation-at-high-flow-2026-01
 domain: ground-systems
 system: ols-tower-2
-author: kknox
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2026-01-03

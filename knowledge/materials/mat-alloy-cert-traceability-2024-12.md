@@ -2,8 +2,8 @@
 id: mat-alloy-cert-traceability-2024-12
 domain: materials
 system: inconel-718
-author: AlbericTrancart
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2024-12-03

@@ -2,8 +2,8 @@
 id: tps-heat-shield-closeout-inspection-2024-11
 domain: thermal-protection
 system: starship-heat-shield
-author: emmedve1
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2024-11-29

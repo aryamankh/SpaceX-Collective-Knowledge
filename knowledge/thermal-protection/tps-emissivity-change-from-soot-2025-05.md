@@ -2,8 +2,8 @@
 id: tps-emissivity-change-from-soot-2025-05
 domain: thermal-protection
 system: starship-heat-shield
-author: emmedve1
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-05-02

@@ -2,8 +2,8 @@
 id: mat-cryogenic-seal-leak-rate-scatter-2025-01
 domain: materials
 system: inconel-718
-author: AlbericTrancart
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2025-01-25

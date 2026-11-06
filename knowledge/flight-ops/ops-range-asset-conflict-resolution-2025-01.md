@@ -2,8 +2,8 @@
 id: ops-range-asset-conflict-resolution-2025-01
 domain: flight-ops
 system: launch-complex-39a
-author: CAM-Gerlach
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2025-01-06

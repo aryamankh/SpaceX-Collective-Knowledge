@@ -2,8 +2,8 @@
 id: mat-primer-adhesion-on-pickled-steel-2024-06
 domain: materials
 system: inconel-718
-author: AlbericTrancart
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2024-06-23

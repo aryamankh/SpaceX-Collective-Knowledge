@@ -2,8 +2,8 @@
 id: mat-lot-hardness-spread-on-718-plate-2025-03
 domain: materials
 system: inconel-718
-author: AlbericTrancart
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-03-27

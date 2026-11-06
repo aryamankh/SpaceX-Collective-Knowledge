@@ -2,8 +2,8 @@
 id: gnc-star-tracker-lost-in-space-time-2025-05
 domain: gnc
 system: booster-b19
-author: richiksc
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-05-09

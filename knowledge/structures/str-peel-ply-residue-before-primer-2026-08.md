@@ -2,8 +2,8 @@
 id: str-peel-ply-residue-before-primer-2026-08
 domain: structures
 system: starship-s38
-author: mattythorne
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2026-08-11

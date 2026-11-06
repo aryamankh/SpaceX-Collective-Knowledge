@@ -2,8 +2,8 @@
 id: av-power-bus-inrush-trip-2026-06
 domain: avionics
 system: flight-computer-b2
-author: collierrgbsitisfise
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2026-06-20

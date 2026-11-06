@@ -2,8 +2,8 @@
 id: sw-logging-backpressure-2026-01
 domain: flight-software
 system: flight-software-v7
-author: aryamankha
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2026-01-15

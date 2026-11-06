@@ -2,8 +2,8 @@
 id: gse-booster-transport-saddle-load-2025-06
 domain: ground-systems
 system: ols-tower-2
-author: kknox
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-06-03

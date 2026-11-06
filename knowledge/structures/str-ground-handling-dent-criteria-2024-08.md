@@ -2,8 +2,8 @@
 id: str-ground-handling-dent-criteria-2024-08
 domain: structures
 system: starship-s38
-author: mattythorne
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2024-08-27

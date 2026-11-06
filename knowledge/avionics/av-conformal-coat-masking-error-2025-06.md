@@ -2,8 +2,8 @@
 id: av-conformal-coat-masking-error-2025-06
 domain: avionics
 system: flight-computer-b2
-author: collierrgbsitisfise
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2025-06-10

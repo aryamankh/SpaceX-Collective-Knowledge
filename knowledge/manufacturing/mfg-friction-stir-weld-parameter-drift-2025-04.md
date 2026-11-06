@@ -2,8 +2,8 @@
 id: mfg-friction-stir-weld-parameter-drift-2025-04
 domain: manufacturing
 system: high-bay-3
-author: AstralZebulon
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-04-03

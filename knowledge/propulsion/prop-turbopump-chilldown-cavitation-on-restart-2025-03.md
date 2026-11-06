@@ -2,8 +2,8 @@
 id: prop-turbopump-chilldown-cavitation-on-restart-2025-03
 domain: propulsion
 system: raptor-3
-author: jakewmeyer
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2025-03-30

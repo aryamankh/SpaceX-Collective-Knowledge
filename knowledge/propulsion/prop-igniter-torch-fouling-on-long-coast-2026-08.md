@@ -2,8 +2,8 @@
 id: prop-igniter-torch-fouling-on-long-coast-2026-08
 domain: propulsion
 system: raptor-3
-author: jakewmeyer
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2026-08-18

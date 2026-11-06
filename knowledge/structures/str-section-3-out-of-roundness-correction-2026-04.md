@@ -2,8 +2,8 @@
 id: str-section-3-out-of-roundness-correction-2026-04
 domain: structures
 system: starship-s38
-author: mattythorne
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2026-04-24

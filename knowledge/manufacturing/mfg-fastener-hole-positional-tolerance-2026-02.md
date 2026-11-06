@@ -2,8 +2,8 @@
 id: mfg-fastener-hole-positional-tolerance-2026-02
 domain: manufacturing
 system: high-bay-3
-author: AstralZebulon
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2026-02-06

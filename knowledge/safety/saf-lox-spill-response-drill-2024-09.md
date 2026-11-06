@@ -2,8 +2,8 @@
 id: saf-lox-spill-response-drill-2024-09
 domain: safety
 system: pad-operations
-author: shahar603
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2024-09-11

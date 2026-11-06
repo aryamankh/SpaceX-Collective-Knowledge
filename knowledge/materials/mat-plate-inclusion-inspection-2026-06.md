@@ -2,8 +2,8 @@
 id: mat-plate-inclusion-inspection-2026-06
 domain: materials
 system: inconel-718
-author: AlbericTrancart
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2026-06-07

@@ -2,8 +2,8 @@
 id: gse-quick-disconnect-seal-galling-2026-05
 domain: ground-systems
 system: ols-tower-2
-author: kknox
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2026-05-09

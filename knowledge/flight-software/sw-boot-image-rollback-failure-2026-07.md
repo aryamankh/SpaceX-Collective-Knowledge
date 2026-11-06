@@ -2,8 +2,8 @@
 id: sw-boot-image-rollback-failure-2026-07
 domain: flight-software
 system: flight-software-v7
-author: aryamankha
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2026-07-14

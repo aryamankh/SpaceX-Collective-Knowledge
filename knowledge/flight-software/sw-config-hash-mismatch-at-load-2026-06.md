@@ -2,8 +2,8 @@
 id: sw-config-hash-mismatch-at-load-2026-06
 domain: flight-software
 system: flight-software-v7
-author: aryamankha
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2026-06-08

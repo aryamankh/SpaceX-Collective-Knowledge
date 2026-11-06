@@ -2,8 +2,8 @@
 id: gse-tanker-detanking-rate-limit-2024-05
 domain: ground-systems
 system: ols-tower-2
-author: kknox
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2024-05-30

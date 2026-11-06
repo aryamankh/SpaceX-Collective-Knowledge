@@ -2,8 +2,8 @@
 id: saf-forklift-pedestrian-separation-2026-08
 domain: safety
 system: pad-operations
-author: shahar603
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2026-08-01

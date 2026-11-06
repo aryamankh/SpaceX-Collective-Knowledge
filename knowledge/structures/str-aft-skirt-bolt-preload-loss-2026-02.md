@@ -2,8 +2,8 @@
 id: str-aft-skirt-bolt-preload-loss-2026-02
 domain: structures
 system: starship-s38
-author: mattythorne
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2026-02-06

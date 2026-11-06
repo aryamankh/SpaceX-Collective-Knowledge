@@ -2,8 +2,8 @@
 id: saf-confined-space-entry-on-tank-2024-11
 domain: safety
 system: pad-operations
-author: shahar603
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2024-11-13

@@ -2,8 +2,8 @@
 id: gnc-gyro-bias-calibration-drift-2025-01
 domain: gnc
 system: booster-b19
-author: richiksc
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2025-01-28

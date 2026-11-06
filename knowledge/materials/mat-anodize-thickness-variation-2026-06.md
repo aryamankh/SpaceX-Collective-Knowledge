@@ -2,8 +2,8 @@
 id: mat-anodize-thickness-variation-2026-06
 domain: materials
 system: inconel-718
-author: AlbericTrancart
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: medium
 created: 2026-06-25

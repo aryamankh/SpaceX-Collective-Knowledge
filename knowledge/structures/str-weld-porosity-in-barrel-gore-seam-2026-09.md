@@ -2,8 +2,8 @@
 id: str-weld-porosity-in-barrel-gore-seam-2026-09
 domain: structures
 system: starship-s38
-author: mattythorne
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2026-09-18

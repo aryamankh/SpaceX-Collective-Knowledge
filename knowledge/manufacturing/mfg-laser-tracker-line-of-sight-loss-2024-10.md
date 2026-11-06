@@ -2,8 +2,8 @@
 id: mfg-laser-tracker-line-of-sight-loss-2024-10
 domain: manufacturing
 system: high-bay-3
-author: AstralZebulon
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2024-10-25

@@ -2,8 +2,8 @@
 id: ops-chase-plane-comms-loss-2024-10
 domain: flight-ops
 system: launch-complex-39a
-author: CAM-Gerlach
-reviewed_by: jhpratt
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2024-10-04

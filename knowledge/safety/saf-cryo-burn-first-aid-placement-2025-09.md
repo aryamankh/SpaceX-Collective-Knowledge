@@ -2,8 +2,8 @@
 id: saf-cryo-burn-first-aid-placement-2025-09
 domain: safety
 system: pad-operations
-author: shahar603
-reviewed_by: mattythorne
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-09-14

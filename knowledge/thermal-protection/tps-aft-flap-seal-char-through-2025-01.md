@@ -2,8 +2,8 @@
 id: tps-aft-flap-seal-char-through-2025-01
 domain: thermal-protection
 system: starship-heat-shield
-author: emmedve1
-reviewed_by: kknox
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: critical
 created: 2025-01-21

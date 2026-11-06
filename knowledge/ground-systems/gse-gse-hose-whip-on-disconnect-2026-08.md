@@ -2,8 +2,8 @@
 id: gse-gse-hose-whip-on-disconnect-2026-08
 domain: ground-systems
 system: ols-tower-2
-author: kknox
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: low
 created: 2026-08-25

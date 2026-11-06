@@ -2,8 +2,8 @@
 id: tps-rtv-cure-inhibition-on-cold-pad-2025-02
 domain: thermal-protection
 system: starship-heat-shield
-author: emmedve1
-reviewed_by: shahar603
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2025-02-03

@@ -159,3 +159,8 @@ The workspace layer — gist-backed persistence, proxy, OAuth exchange and reque
 ## License
 
 Apache-2.0. See [LICENSE](LICENSE).
+
+## Status
+
+Internal SpaceX engineering resource. Maintained by the platform team on the `main` branch; feature work lands on topic branches and merges through CODEOWNERS review.
+Not a GitHub fork: the workspace shell comes from Prestige and is carried here deliberately, so the corpus and the client version together.

@@ -20,8 +20,8 @@ finding, not just the subsystem. `index.json` is generated, never hand-edited.
 id: prop-raptor-tvc-oscillation-2026-04
 domain: propulsion
 system: raptor-3
-author: jakewmeyer
-reviewed_by: CAM-Gerlach
+author: aryamankh
+reviewed_by: aryamankh
 status: reviewed
 severity: high
 created: 2026-04-18

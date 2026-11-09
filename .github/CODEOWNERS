@@ -1,14 +1,3 @@
-# Owning team reviews every note in its domain.
-/knowledge/propulsion.md @bliutech
-/knowledge/structures.md @fabioibanez
-/knowledge/avionics.md @anonrig
-/knowledge/gnc.md @kesavanramakrishnan
-/knowledge/thermal-protection.md @dotcgp
-/knowledge/ground-systems.md @giljulio
-/knowledge/manufacturing.md @shawnthapa
-/knowledge/materials.md @lilingxi01
-/knowledge/flight-software.md @SivilTaram
-/knowledge/flight-ops.md @VineethSendilraj
-/knowledge/safety.md @SirajChokshi
-/knowledge/SCHEMA.md @aryamankh
+# Owner of record reviews every note in the base.
+/knowledge/ @aryamankh
 /backend/tools/ingest/ @aryamankh
